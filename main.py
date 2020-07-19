@@ -102,13 +102,13 @@ class Scrubber:
 
             team = self.current_line[7:9]
 
-            if self.previous_line[-3:] == "psn":
+            if self.previous_line[-4:-1] == "psn":
                 print("It was from status!")
                 self.status_KO(nickname)
-            elif self.previous_line[-12:] == "Stealth Rock":
+            elif self.previous_line[-13:-1] == "Stealth Rock":
                 print("It was from Rocks!")
                 self.hazards_KO(team, "Stealth Rock")
-            elif self.previous_line[-6:] == "Spikes":
+            elif self.previous_line[-7:-1] == "Spikes":
                 print("It was from Spikes!")
                 self.hazards_KO(team, "Spikes")
             else:
