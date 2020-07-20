@@ -1,4 +1,3 @@
-
 # TO USE:
 # 1. Download the replay from Showdown
 # 2. Rename the replay to "matchData.txt"
@@ -15,6 +14,9 @@
 # Does not credit correctly for the following...
 #   - PERISH TRAPPING
 #   - Other potential edge cases
+
+import fileUtil
+
 
 class Scrubber:
 
@@ -38,7 +40,8 @@ class Scrubber:
         self.core_loop()
         self.f.close()
 
-        WriteLogs(self.party_lineup, self.pokemon)
+        fileUtil.LineupFile(self.party_lineup)
+        fileUtil.StatsFile(self.pokemon)
 
     def core_loop(self):
         self.update_line()
@@ -89,7 +92,7 @@ class Scrubber:
         nickname_end = self.current_line.find("|", offset)
         nickname = self.current_line[offset + 4:nickname_end]
 
-        species = self.get_pokemon_name(nickname_end+1)
+        species = self.get_pokemon_name(nickname_end + 1)
 
         return nickname, species
 
@@ -102,18 +105,29 @@ class Scrubber:
 
             team = self.current_line[7:9]
 
-            if self.previous_line[-4:-1] == "psn":
+            if self._check_if_end_is("psn"):
                 print("It was from status!")
                 self.status_KO(nickname)
-            elif self.previous_line[-13:-1] == "Stealth Rock":
+            elif self._check_if_end_is("Stealth Rock"):
                 print("It was from Rocks!")
                 self.hazards_KO(team, "Stealth Rock")
-            elif self.previous_line[-7:-1] == "Spikes":
+            elif self._check_if_end_is("Spikes"):
                 print("It was from Spikes!")
                 self.hazards_KO(team, "Spikes")
             else:
                 print("It was from an attack!")
                 self.direct_KO(team)
+
+    def _check_if_end_is(self, text):
+        OFFSET = -1
+
+        start_pos = OFFSET - len(text)
+        end_pos = OFFSET
+
+        if self.previous_line[start_pos:end_pos] == text:
+            return True
+        else:
+            return False
 
     def direct_KO(self, team_downed):
         team_responsible = self.invert_team(team_downed)
@@ -178,29 +192,6 @@ class Scrubber:
             return "p2"
         else:
             return "p1"
-
-
-class WriteLogs:
-
-    def __init__(self, lineup, statistics):
-        f = open("lineup.csv", "w")
-        f.write("Team,\tSpecies\n")
-        for player in lineup:
-            for pokemon in lineup[player]:
-                new_line = player + ",\t" + pokemon + "\n"
-                f.write(new_line)
-        f.close()
-
-        f = open("stats.csv", "w")
-        f.write("Team,\tSpecies,\tKOs,\tDeaths\n")
-        for nickname in statistics:
-            new_line = ""
-            for i in range(0,4):
-                stat = statistics[nickname][i]
-                new_line = new_line + str(stat) + ",\t"
-            new_line = new_line[:-2] + "\n"
-            f.write(new_line)
-        f.close()
 
 
 Scrubber()
