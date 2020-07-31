@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<!-- version 1 -->
+<title>[Gen 7] Custom Game replay: davidyizheng vs. mike30452</title>
+<style>
+html,body {font-family:Verdana, sans-serif;font-size:10pt;margin:0;padding:0;}body{padding:12px 0;} .battle-log {font-family:Verdana, sans-serif;font-size:10pt;} .battle-log-inline {border:1px solid #AAAAAA;background:#EEF2F5;color:black;max-width:640px;margin:0 auto 80px;padding-bottom:5px;} .battle-log .inner {padding:4px 8px 0px 8px;} .battle-log .inner-preempt {padding:0 8px 4px 8px;} .battle-log .inner-after {margin-top:0.5em;} .battle-log h2 {margin:0.5em -8px;padding:4px 8px;border:1px solid #AAAAAA;background:#E0E7EA;border-left:0;border-right:0;font-family:Verdana, sans-serif;font-size:13pt;} .battle-log .chat {vertical-align:middle;padding:3px 0 3px 0;font-size:8pt;} .battle-log .chat strong {color:#40576A;} .battle-log .chat em {padding:1px 4px 1px 3px;color:#000000;font-style:normal;} .chat.mine {background:rgba(0,0,0,0.05);margin-left:-8px;margin-right:-8px;padding-left:8px;padding-right:8px;} .spoiler {color:#BBBBBB;background:#BBBBBB;padding:0px 3px;} .spoiler:hover, .spoiler:active, .spoiler-shown {color:#000000;background:#E2E2E2;padding:0px 3px;} .spoiler a {color:#BBBBBB;} .spoiler:hover a, .spoiler:active a, .spoiler-shown a {color:#2288CC;} .chat code, .chat .spoiler:hover code, .chat .spoiler:active code, .chat .spoiler-shown code {border:1px solid #C0C0C0;background:#EEEEEE;color:black;padding:0 2px;} .chat .spoiler code {border:1px solid #CCCCCC;background:#CCCCCC;color:#CCCCCC;} .battle-log .rated {padding:3px 4px;} .battle-log .rated strong {color:white;background:#89A;padding:1px 4px;border-radius:4px;} .spacer {margin-top:0.5em;} .message-announce {background:#6688AA;color:white;padding:1px 4px 2px;} .message-announce a, .broadcast-green a, .broadcast-blue a, .broadcast-red a {color:#DDEEFF;} .broadcast-green {background-color:#559955;color:white;padding:2px 4px;} .broadcast-blue {background-color:#6688AA;color:white;padding:2px 4px;} .infobox {border:1px solid #6688AA;padding:2px 4px;} .infobox-limited {max-height:200px;overflow:auto;overflow-x:hidden;} .broadcast-red {background-color:#AA5544;color:white;padding:2px 4px;} .message-learn-canlearn {font-weight:bold;color:#228822;text-decoration:underline;} .message-learn-cannotlearn {font-weight:bold;color:#CC2222;text-decoration:underline;} .message-effect-weak {font-weight:bold;color:#CC2222;} .message-effect-resist {font-weight:bold;color:#6688AA;} .message-effect-immune {font-weight:bold;color:#666666;} .message-learn-list {margin-top:0;margin-bottom:0;} .message-throttle-notice, .message-error {color:#992222;} .message-overflow, .chat small.message-overflow {font-size:0pt;} .message-overflow::before {font-size:9pt;content:'...';} .subtle {color:#3A4A66;}
+</style>
+<div class="wrapper replay-wrapper" style="max-width:1180px;margin:0 auto">
+<input type="hidden" name="replayid" value="gen7customgame-1160627734" />
+<div class="battle"></div><div class="battle-log"></div><div class="replay-controls"></div><div class="replay-controls-2"></div>
+<h1 style="font-weight:normal;text-align:center"><strong>[Gen 7] Custom Game</strong><br /><a href="http://pokemonshowdown.com/users/davidyizheng" class="subtle" target="_blank">davidyizheng</a> vs. <a href="http://pokemonshowdown.com/users/mike30452" class="subtle" target="_blank">mike30452</a></h1>
+<script type="text/plain" class="battle-log-data">|j|☆davidyizheng
+|j|☆mike30452
+|t:|1596154738
+|player|p1|davidyizheng|lucas-gen4pt|
+|player|p2|mike30452|riley|
+|teamsize|p1|6
+|teamsize|p2|6
+|gametype|singles
+|gen|7
+|tier|[Gen 7] Custom Game
+|clearpoke
+|poke|p1|Roselia, F|item
+|poke|p1|Latios, M|item
+|poke|p1|Togekiss, F|item
+|poke|p1|Garchomp, F|item
+|poke|p1|Krookodile, F|item
+|poke|p1|Rotom-Wash|item
+|poke|p2|Swampert, F|item
+|poke|p2|Politoed, M|item
+|poke|p2|Bronzong|item
+|poke|p2|Kingdra, F|item
+|poke|p2|Tornadus-Therian, M|item
+|poke|p2|Ludicolo, F|item
+|teampreview|24
+|j| MyFirstMistake
+
+
+|j| TrainerMitch12
+
+
+|
+|t:|1596154835
+|start
+|switch|p1a: Laundry Machine|Rotom-Wash|304\/304
+|switch|p2a: Politoed|Politoed, M, shiny|384\/384
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|turn|1
+
+
+|
+|t:|1596154848
+|move|p1a: Laundry Machine|Thunder Wave|p2a: Politoed
+|-status|p2a: Politoed|par
+|move|p2a: Politoed|Toxic|p1a: Laundry Machine
+|-status|p1a: Laundry Machine|tox
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: Laundry Machine|285\/304 tox|[from] psn
+|upkeep
+|turn|2
+
+
+|
+|t:|1596154868
+|switch|p2a: Ludicolo|Ludicolo, F, shiny|364\/364
+|move|p1a: Laundry Machine|Volt Switch|p2a: Ludicolo
+|-damage|p2a: Ludicolo|279\/364
+
+
+|
+|t:|1596154887
+|switch|p1a: Lowkey Covid|Roselia, F, shiny|304\/304|[from]move: Volt Switch
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Ludicolo|301\/364|[from] ability: Rain Dish
+|-heal|p2a: Ludicolo|323\/364|[from] item: Leftovers
+|upkeep
+|turn|3
+
+
+|
+|t:|1596154896
+|move|p2a: Ludicolo|Ice Beam|p1a: Lowkey Covid
+|-supereffective|p1a: Lowkey Covid
+|-damage|p1a: Lowkey Covid|208\/304
+|move|p1a: Lowkey Covid|Sunny Day|p1a: Lowkey Covid
+|-weather|SunnyDay
+|
+|-weather|SunnyDay|[upkeep]
+|-heal|p2a: Ludicolo|345\/364|[from] item: Leftovers
+|upkeep
+|turn|4
+
+
+|
+|t:|1596154975
+|switch|p2a: Tornadus|Tornadus-Therian, M, shiny|362\/362
+|move|p1a: Lowkey Covid|Toxic Spikes|p2a: Tornadus
+|-sidestart|p2: mike30452|move: Toxic Spikes
+|
+|-weather|SunnyDay|[upkeep]
+|upkeep
+|turn|5
+
+
+|
+|t:|1596154999
+|switch|p1a: Sunglass Hut|Krookodile, F|331\/331
+|move|p2a: Tornadus|Heat Wave|p1a: Sunglass Hut
+|debug|Sunny Day fire boost
+|-damage|p1a: Sunglass Hut|149\/331
+|
+|-weather|SunnyDay|[upkeep]
+|upkeep
+|turn|6
+
+
+|
+|t:|1596155012
+|move|p1a: Sunglass Hut|Rock Slide|p2a: Tornadus
+|-supereffective|p2a: Tornadus
+|-damage|p2a: Tornadus|158\/362
+|move|p2a: Tornadus|Heat Wave|p1a: Sunglass Hut
+|debug|Sunny Day fire boost
+|-crit|p1a: Sunglass Hut
+|-damage|p1a: Sunglass Hut|0 fnt
+|faint|p1a: Sunglass Hut
+|
+|-weather|SunnyDay|[upkeep]
+|upkeep
+
+
+|
+|t:|1596155029
+|switch|p1a: Laundry Machine|Rotom-Wash|285\/304 tox
+|turn|7
+
+
+|
+|t:|1596155049
+|switch|p2a: Politoed|Politoed, M, shiny|384\/384 par
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|move|p1a: Laundry Machine|Will-O-Wisp||[still]
+|-fail|p1a: Laundry Machine
+|debug|move failed because it did nothing
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Laundry Machine|304\/304 tox|[from] item: Leftovers
+|-damage|p1a: Laundry Machine|285\/304 tox|[from] psn
+|upkeep
+|turn|8
+
+
+|
+|t:|1596155101
+|move|p1a: Laundry Machine|Volt Switch|p2a: Politoed
+|-supereffective|p2a: Politoed
+|-damage|p2a: Politoed|202\/384 par
+
+
+|
+|t:|1596155113
+|switch|p1a: F-22|Latios, M|301\/301|[from]move: Volt Switch
+|move|p2a: Politoed|Scald|p1a: F-22
+|debug|rain water boost
+|-resisted|p1a: F-22
+|-crit|p1a: F-22
+|-damage|p1a: F-22|247\/301
+|
+|-weather|RainDance|[upkeep]
+|upkeep
+|turn|9
+
+
+|
+|t:|1596155129
+|switch|p2a: Tornadus|Tornadus-Therian, M, shiny|278\/362
+|move|p1a: F-22|Draco Meteor|p2a: Tornadus
+|-damage|p2a: Tornadus|40\/362
+|-unboost|p1a: F-22|spa|2
+|
+|-weather|RainDance|[upkeep]
+|upkeep
+|turn|10
+
+
+|
+|t:|1596155154
+|move|p2a: Tornadus|Hurricane|p1a: F-22
+|-damage|p1a: F-22|162\/301
+|-start|p1a: F-22|confusion
+|-activate|p1a: F-22|confusion
+|-damage|p1a: F-22|133\/301|[from] confusion
+|
+|-weather|RainDance|[upkeep]
+|upkeep
+|turn|11
+
+
+|
+|t:|1596155169
+|switch|p1a: Laundry Machine|Rotom-Wash|285\/304 tox
+|move|p2a: Tornadus|Defog|p1a: Laundry Machine
+|-unboost|p1a: Laundry Machine|evasion|1
+|-sideend|p2: mike30452|Toxic Spikes|[from] move: Defog|[of] p2a: Tornadus
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Laundry Machine|304\/304 tox|[from] item: Leftovers
+|-damage|p1a: Laundry Machine|285\/304 tox|[from] psn
+|upkeep
+|turn|12
+
+
+|
+|t:|1596155181
+|switch|p2a: Ludicolo|Ludicolo, F, shiny|345\/364
+|move|p1a: Laundry Machine|Will-O-Wisp|p2a: Ludicolo|[miss]
+|-miss|p1a: Laundry Machine|p2a: Ludicolo
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Ludicolo|364\/364|[from] ability: Rain Dish
+|-heal|p1a: Laundry Machine|304\/304 tox|[from] item: Leftovers
+|-damage|p1a: Laundry Machine|266\/304 tox|[from] psn
+|upkeep
+|turn|13
+
+
+|
+|t:|1596155191
+|move|p1a: Laundry Machine|Thunder Wave|p2a: Ludicolo
+|-status|p2a: Ludicolo|par
+|cant|p2a: Ludicolo|par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p1a: Laundry Machine|285\/304 tox|[from] item: Leftovers
+|-damage|p1a: Laundry Machine|228\/304 tox|[from] psn
+|upkeep
+|turn|14
+
+
+|
+|t:|1596155201
+|move|p1a: Laundry Machine|Volt Switch|p2a: Ludicolo
+|-damage|p2a: Ludicolo|279\/364 par
+
+
+|
+|t:|1596155208
+|switch|p1a: Benedict|Togekiss, F, shiny|311\/311|[from]move: Volt Switch
+|move|p2a: Ludicolo|Giga Drain|p1a: Benedict
+|-resisted|p1a: Benedict
+|-damage|p1a: Benedict|265\/311
+|-heal|p2a: Ludicolo|302\/364 par|[from] drain|[of] p1a: Benedict
+|
+|-weather|none
+|-heal|p2a: Ludicolo|324\/364 par|[from] item: Leftovers
+|upkeep
+|turn|15
+
+
+|
+|t:|1596155242
+|switch|p2a: Bronzong|Bronzong, shiny|338\/338
+|move|p1a: Benedict|Air Slash|p2a: Bronzong
+|-resisted|p2a: Bronzong
+|-crit|p2a: Bronzong
+|-damage|p2a: Bronzong|250\/338
+|
+|upkeep
+|turn|16
+
+
+|
+|t:|1596155256
+|move|p1a: Benedict|Flamethrower|p2a: Bronzong
+|-supereffective|p2a: Bronzong
+|-crit|p2a: Bronzong
+|-damage|p2a: Bronzong|0 fnt
+|faint|p2a: Bronzong
+|
+|upkeep
+
+
+|j| Remasteror
+
+
+|l| Remasteror
+
+
+|
+|t:|1596155299
+|switch|p2a: Swampert|Swampert, F, shiny|342\/342
+|turn|17
+
+
+|c| MyFirstMistake|The move: "gg"
+
+
+|
+|t:|1596155304
+|detailschange|p2a: Swampert|Swampert-Mega, F, shiny
+|-mega|p2a: Swampert|Swampert|Swampertite
+|move|p1a: Benedict|Grass Knot|p2a: Swampert
+|debug|100 bp
+|-supereffective|p2a: Swampert
+|-damage|p2a: Swampert|0 fnt
+|faint|p2a: Swampert
+|
+|upkeep
+
+
+|c| TrainerMitch12|gg
+
+
+|
+|t:|1596155367
+|switch|p2a: Politoed|Politoed, M, shiny|202\/384 par
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|turn|18
+
+
+|
+|t:|1596155373
+|switch|p2a: Ludicolo|Ludicolo, F, shiny|324\/364 par
+|move|p1a: Benedict|Hidden Power|p2a: Ludicolo
+|-damage|p2a: Ludicolo|260\/364 par
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Ludicolo|282\/364 par|[from] ability: Rain Dish
+|-heal|p2a: Ludicolo|304\/364 par|[from] item: Leftovers
+|upkeep
+|turn|19
+
+
+|
+|t:|1596155382
+|move|p1a: Benedict|Air Slash|p2a: Ludicolo
+|-supereffective|p2a: Ludicolo
+|-crit|p2a: Ludicolo
+|-damage|p2a: Ludicolo|0 fnt
+|faint|p2a: Ludicolo
+|
+|-weather|RainDance|[upkeep]
+|upkeep
+
+
+|
+|t:|1596155415
+|switch|p2a: Kingdra|Kingdra, F, shiny|292\/292
+|turn|20
+
+
+|
+|t:|1596155420
+|move|p2a: Kingdra|Ice Beam|p1a: Benedict
+|-supereffective|p1a: Benedict
+|-damage|p1a: Benedict|119\/311
+|move|p1a: Benedict|Hidden Power|p2a: Kingdra
+|-crit|p2a: Kingdra
+|-damage|p2a: Kingdra|182\/292
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Kingdra|200\/292|[from] item: Leftovers
+|upkeep
+|turn|21
+
+
+|
+|t:|1596155430
+|switch|p1a: Laundry Machine|Rotom-Wash|228\/304 tox
+|move|p2a: Kingdra|Ice Beam|p1a: Laundry Machine
+|-resisted|p1a: Laundry Machine
+|-damage|p1a: Laundry Machine|188\/304 tox
+|debug|move failed because it did nothing
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Kingdra|218\/292|[from] item: Leftovers
+|-heal|p1a: Laundry Machine|207\/304 tox|[from] item: Leftovers
+|-damage|p1a: Laundry Machine|188\/304 tox|[from] psn
+|upkeep
+|turn|22
+
+
+|
+|t:|1596155446
+|move|p2a: Kingdra|Draco Meteor|p1a: Laundry Machine
+|-damage|p1a: Laundry Machine|14\/304 tox
+|-unboost|p2a: Kingdra|spa|2
+|move|p1a: Laundry Machine|Thunder Wave|p2a: Kingdra|[miss]
+|-miss|p1a: Laundry Machine|p2a: Kingdra
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Kingdra|236\/292|[from] item: Leftovers
+|-heal|p1a: Laundry Machine|33\/304 tox|[from] item: Leftovers
+|-damage|p1a: Laundry Machine|0 fnt|[from] psn
+|faint|p1a: Laundry Machine
+|upkeep
+
+
+|
+|t:|1596155461
+|switch|p1a: Lowkey Covid|Roselia, F, shiny|208\/304
+|turn|23
+
+
+|
+|t:|1596155487
+|move|p2a: Kingdra|Ice Beam|p1a: Lowkey Covid
+|-supereffective|p1a: Lowkey Covid
+|-damage|p1a: Lowkey Covid|156\/304
+|move|p1a: Lowkey Covid|Leaf Storm|p2a: Kingdra|[miss]
+|-miss|p1a: Lowkey Covid|p2a: Kingdra
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Kingdra|254\/292|[from] item: Leftovers
+|upkeep
+|turn|24
+
+
+|
+|t:|1596155512
+|switch|p2a: Tornadus|Tornadus-Therian, M, shiny|160\/362
+|move|p1a: Lowkey Covid|Spikes|p2a: Tornadus
+|-sidestart|p2: mike30452|Spikes
+|
+|-weather|RainDance|[upkeep]
+|upkeep
+|turn|25
+
+
+|
+|t:|1596155522
+|move|p2a: Tornadus|Hurricane|p1a: Lowkey Covid
+|-supereffective|p1a: Lowkey Covid
+|-damage|p1a: Lowkey Covid|0 fnt
+|faint|p1a: Lowkey Covid
+|
+|-weather|none
+|upkeep
+
+
+|
+|t:|1596155527
+|switch|p1a: F-22|Latios, M|133\/301
+|turn|26
+
+
+|
+|t:|1596155534
+|move|p2a: Tornadus|Hurricane|p1a: F-22|[miss]
+|-miss|p2a: Tornadus|p1a: F-22
+|move|p1a: F-22|Draco Meteor|p2a: Tornadus
+|-damage|p2a: Tornadus|0 fnt
+|-unboost|p1a: F-22|spa|2
+|faint|p2a: Tornadus
+|
+|upkeep
+
+
+|
+|t:|1596155558
+|switch|p2a: Politoed|Politoed, M, shiny|202\/384 par
+|-damage|p2a: Politoed|154\/384 par|[from] Spikes
+|-weather|RainDance|[from] ability: Drizzle|[of] p2a: Politoed
+|turn|27
+
+
+|
+|t:|1596155571
+|move|p1a: F-22|Thunderbolt|p2a: Politoed
+|-supereffective|p2a: Politoed
+|-damage|p2a: Politoed|42\/384 par
+|move|p2a: Politoed|Toxic|p1a: F-22
+|-status|p1a: F-22|tox
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: F-22|115\/301 tox|[from] psn
+|upkeep
+|turn|28
+
+
+|j| SquirtleSquadu
+
+
+|
+|t:|1596155587
+|move|p1a: F-22|Thunderbolt|p2a: Politoed
+|-supereffective|p2a: Politoed
+|-damage|p2a: Politoed|0 fnt
+|faint|p2a: Politoed
+|
+|-weather|RainDance|[upkeep]
+|-damage|p1a: F-22|79\/301 tox|[from] psn
+|upkeep
+
+
+|
+|t:|1596155594
+|switch|p2a: Kingdra|Kingdra, F, shiny|254\/292
+|-damage|p2a: Kingdra|218\/292|[from] Spikes
+|turn|29
+
+
+|
+|t:|1596155599
+|move|p2a: Kingdra|Ice Beam|p1a: F-22
+|-supereffective|p1a: F-22
+|-damage|p1a: F-22|0 fnt
+|faint|p1a: F-22
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Kingdra|236\/292|[from] item: Leftovers
+|upkeep
+
+
+|
+|t:|1596155614
+|switch|p1a: Benedict|Togekiss, F, shiny|119\/311
+|turn|30
+
+
+|
+|t:|1596155620
+|move|p2a: Kingdra|Ice Beam|p1a: Benedict
+|-supereffective|p1a: Benedict
+|-damage|p1a: Benedict|0 fnt
+|faint|p1a: Benedict
+|
+|-weather|RainDance|[upkeep]
+|-heal|p2a: Kingdra|254\/292|[from] item: Leftovers
+|upkeep
+
+
+|
+|t:|1596155626
+|switch|p1a: Loan Shark|Garchomp, F, shiny|357\/357
+|turn|31
+
+
+|
+|t:|1596155649
+|move|p2a: Kingdra|Ice Beam|p1a: Loan Shark
+|-supereffective|p1a: Loan Shark
+|-damage|p1a: Loan Shark|0 fnt
+|faint|p1a: Loan Shark
+|
+|win|mike30452
+</script>
+</div>
+<div class="battle-log battle-log-inline"><div class="inner"><div class="battle-options"><div style="padding-top: 3px; padding-right: 3px; text-align: right"><button class="icon button" name="openBattleOptions" title="Options">Battle Options</button></div></div><div class="inner message-log"><div class="chat"><small>☆davidyizheng and ☆mike30452 joined</small></div><div class=""><small>Format:</small> <br><strong>[Gen 7] Custom Game</strong></div><div class="chat battle-history"><strong>davidyizheng's team:</strong> <em style="color:#445566;display:block;">Roselia / Latios / Togekiss / Garchomp / Krookodile / Rotom-Wash</em></div><div class="chat battle-history"><strong>mike30452's team:</strong> <em style="color:#445566;display:block;">Swampert / Politoed / Bronzong / Kingdra / Tornadus-Therian / Ludicolo</em></div><div class="chat"><small> MyFirstMistake and  TrainerMitch12 joined</small></div><div class="spacer battle-history"><br></div><div class="battle-history">Battle started between davidyizheng and mike30452!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Go! Laundry Machine (<strong>Rotom-Wash</strong>)!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 sent out <strong>Politoed</strong>!<br></div><div class="battle-history">[The opposing Politoed's Drizzle]<br><small>It started to rain!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 1</h2><div class="spacer battle-history"><br></div><div class="battle-history">Laundry Machine used <strong>Thunder Wave</strong>!<br></div><div class="battle-history"><small>The opposing Politoed is paralyzed! It may be unable to move!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Politoed used <strong>Toxic</strong>!<br></div><div class="battle-history"><small>Laundry Machine was badly poisoned!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history"><small>Laundry Machine was hurt by poison!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 2</h2><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 withdrew Politoed!<br></div><div class="battle-history">mike30452 sent out <strong>Ludicolo</strong>!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Laundry Machine used <strong>Volt Switch</strong>!<br></div><div class="battle-history"><small>(The opposing Ludicolo lost <abbr title="−85/364">23.4%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Laundry Machine went back to davidyizheng!<br></div><div class="battle-history">Go! Lowkey Covid (<strong>Roselia</strong>)!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history">[The opposing Ludicolo's Rain Dish]<br><small>The opposing Ludicolo had its HP restored.</small><br></div><div class="battle-history"><small>The opposing Ludicolo restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 3</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Ludicolo used <strong>Ice Beam</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(Lowkey Covid lost <abbr title="−96/304">31.6%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Lowkey Covid used <strong>Sunny Day</strong>!<br></div><div class="battle-history"><small>The sunlight turned harsh!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(The sunlight is strong.)</small><br></div><div class="battle-history"><small>The opposing Ludicolo restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 4</h2><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 withdrew Ludicolo!<br></div><div class="battle-history">mike30452 sent out Tornadus (<strong>Tornadus-Therian</strong>)!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Lowkey Covid used <strong>Toxic Spikes</strong>!<br></div><div class="battle-history"><small>Poison spikes were scattered on the ground all around the opposing team!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(The sunlight is strong.)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 5</h2><div class="spacer battle-history"><br></div><div class="battle-history">Lowkey Covid, come back!<br></div><div class="battle-history">Go! Sunglass Hut (<strong>Krookodile</strong>)!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Tornadus used <strong>Heat Wave</strong>!<br></div><div class="debug"><div class="chat"><small style="color:#999">[DEBUG] Sunny Day fire boost.</small></div></div><div class="battle-history"><small>(Sunglass Hut lost <abbr title="−182/331">55.0%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(The sunlight is strong.)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 6</h2><div class="spacer battle-history"><br></div><div class="battle-history">Sunglass Hut used <strong>Rock Slide</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Tornadus lost <abbr title="−204/362">56.4%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Tornadus used <strong>Heat Wave</strong>!<br></div><div class="debug"><div class="chat"><small style="color:#999">[DEBUG] Sunny Day fire boost.</small></div></div><div class="battle-history"><small>A critical hit!</small><br></div><div class="battle-history"><small>(Sunglass Hut lost <abbr title="−149/331">45.0%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Sunglass Hut fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(The sunlight is strong.)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Go! Laundry Machine (<strong>Rotom-Wash</strong>)!<br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 7</h2><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 withdrew Tornadus!<br></div><div class="battle-history">mike30452 sent out <strong>Politoed</strong>!<br></div><div class="battle-history">[The opposing Politoed's Drizzle]<br><small>It started to rain!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Laundry Machine used <strong>Will-O-Wisp</strong>!<br></div><div class="battle-history"><small>But it failed!</small><br></div><div class="debug"><div class="chat"><small style="color:#999">[DEBUG] move failed because it did nothing.</small></div></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history"><small>Laundry Machine restored a little HP using its Leftovers!</small><br></div><div class="battle-history"><small>Laundry Machine was hurt by poison!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 8</h2><div class="spacer battle-history"><br></div><div class="battle-history">Laundry Machine used <strong>Volt Switch</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Politoed lost <abbr title="−182/384">47.4%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Laundry Machine went back to davidyizheng!<br></div><div class="battle-history">Go! F-22 (<strong>Latios</strong>)!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Politoed used <strong>Scald</strong>!<br></div><div class="debug"><div class="chat"><small style="color:#999">[DEBUG] rain water boost.</small></div></div><div class="battle-history"><small>It's not very effective...</small><br></div><div class="battle-history"><small>A critical hit!</small><br></div><div class="battle-history"><small>(F-22 lost <abbr title="−54/301">17.9%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 9</h2><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 withdrew Politoed!<br></div><div class="battle-history">mike30452 sent out Tornadus (<strong>Tornadus-Therian</strong>)!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">F-22 used <strong>Draco Meteor</strong>!<br></div><div class="battle-history"><small>(The opposing Tornadus lost <abbr title="−238/362">65.7%</abbr> of its health!)</small><br></div><div class="battle-history"><small>F-22's Sp. Atk fell harshly!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 10</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Tornadus used <strong>Hurricane</strong>!<br></div><div class="battle-history"><small>(F-22 lost <abbr title="−85/301">28.2%</abbr> of its health!)</small><br></div><div class="battle-history"><small>F-22 became confused!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>F-22 is confused!</small><br></div><div class="battle-history">It hurt itself in its confusion!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 11</h2><div class="spacer battle-history"><br></div><div class="battle-history">F-22, come back!<br></div><div class="battle-history">Go! Laundry Machine (<strong>Rotom-Wash</strong>)!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Tornadus used <strong>Defog</strong>!<br></div><div class="battle-history"><small>Laundry Machine's evasiveness fell!</small><br></div><div class="battle-history"><small>The poison spikes disappeared from the ground around the opposing team!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history"><small>Laundry Machine restored a little HP using its Leftovers!</small><br></div><div class="battle-history"><small>Laundry Machine was hurt by poison!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 12</h2><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 withdrew Tornadus!<br></div><div class="battle-history">mike30452 sent out <strong>Ludicolo</strong>!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Laundry Machine used <strong>Will-O-Wisp</strong>!<br></div><div class="battle-history"><small>The opposing Ludicolo avoided the attack!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history">[The opposing Ludicolo's Rain Dish]<br><small>The opposing Ludicolo had its HP restored.</small><br></div><div class="battle-history"><small>Laundry Machine restored a little HP using its Leftovers!</small><br></div><div class="battle-history"><small>Laundry Machine was hurt by poison!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 13</h2><div class="spacer battle-history"><br></div><div class="battle-history">Laundry Machine used <strong>Thunder Wave</strong>!<br></div><div class="battle-history"><small>The opposing Ludicolo is paralyzed! It may be unable to move!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Ludicolo is paralyzed! It can't move!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history"><small>Laundry Machine restored a little HP using its Leftovers!</small><br></div><div class="battle-history"><small>Laundry Machine was hurt by poison!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 14</h2><div class="spacer battle-history"><br></div><div class="battle-history">Laundry Machine used <strong>Volt Switch</strong>!<br></div><div class="battle-history"><small>(The opposing Ludicolo lost <abbr title="−85/364">23.4%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Laundry Machine went back to davidyizheng!<br></div><div class="battle-history">Go! Benedict (<strong>Togekiss</strong>)!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Ludicolo used <strong>Giga Drain</strong>!<br></div><div class="battle-history"><small>It's not very effective...</small><br></div><div class="battle-history"><small>(Benedict lost <abbr title="−46/311">14.8%</abbr> of its health!)</small><br></div><div class="battle-history"><small>Benedict had its energy drained!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>The rain stopped.</small><br></div><div class="battle-history"><small>The opposing Ludicolo restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 15</h2><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 withdrew Ludicolo!<br></div><div class="battle-history">mike30452 sent out <strong>Bronzong</strong>!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Benedict used <strong>Air Slash</strong>!<br></div><div class="battle-history"><small>It's not very effective...</small><br></div><div class="battle-history"><small>A critical hit!</small><br></div><div class="battle-history"><small>(The opposing Bronzong lost <abbr title="−88/338">26.0%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 16</h2><div class="spacer battle-history"><br></div><div class="battle-history">Benedict used <strong>Flamethrower</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>A critical hit!</small><br></div><div class="battle-history"><small>(The opposing Bronzong lost <abbr title="−250/338">74.0%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Bronzong fainted!<br></div><div class="chat"><small> Remasteror joined;  Remasteror left</small></div><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 sent out <strong>Swampert</strong>!<br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 17</h2><div class="chat chatmessage-myfirstmistake mine"><strong style="color:#17a2b7"><small> </small><span class="username" data-name="MyFirstMistake">MyFirstMistake</span>:</strong> <em>The move: "gg"</em></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>The opposing Swampert's Swampertite is reacting to the Key Stone!</small><br>The opposing Swampert has Mega Evolved into Mega Swampert!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Benedict used <strong>Grass Knot</strong>!<br></div><div class="debug"><div class="chat"><small style="color:#999">[DEBUG] 100 bp.</small></div></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Swampert lost <abbr title="−342/342">100%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Swampert fainted!<br></div><div class="chat chatmessage-trainermitch12"><strong style="color:#237592"><small> </small><span class="username" data-name="TrainerMitch12">TrainerMitch12</span>:</strong> <em>gg</em></div><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 sent out <strong>Politoed</strong>!<br></div><div class="battle-history">[The opposing Politoed's Drizzle]<br><small>It started to rain!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 18</h2><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 withdrew Politoed!<br></div><div class="battle-history">mike30452 sent out <strong>Ludicolo</strong>!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Benedict used <strong>Hidden Power</strong>!<br></div><div class="battle-history"><small>(The opposing Ludicolo lost <abbr title="−64/364">17.6%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history">[The opposing Ludicolo's Rain Dish]<br><small>The opposing Ludicolo had its HP restored.</small><br></div><div class="battle-history"><small>The opposing Ludicolo restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 19</h2><div class="spacer battle-history"><br></div><div class="battle-history">Benedict used <strong>Air Slash</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>A critical hit!</small><br></div><div class="battle-history"><small>(The opposing Ludicolo lost <abbr title="−304/364">83.5%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Ludicolo fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 sent out <strong>Kingdra</strong>!<br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 20</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Kingdra used <strong>Ice Beam</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(Benedict lost <abbr title="−146/311">46.9%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Benedict used <strong>Hidden Power</strong>!<br></div><div class="battle-history"><small>A critical hit!</small><br></div><div class="battle-history"><small>(The opposing Kingdra lost <abbr title="−110/292">37.7%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history"><small>The opposing Kingdra restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 21</h2><div class="spacer battle-history"><br></div><div class="battle-history">Benedict, come back!<br></div><div class="battle-history">Go! Laundry Machine (<strong>Rotom-Wash</strong>)!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Kingdra used <strong>Ice Beam</strong>!<br></div><div class="battle-history"><small>It's not very effective...</small><br></div><div class="battle-history"><small>(Laundry Machine lost <abbr title="−40/304">13.2%</abbr> of its health!)</small><br></div><div class="debug"><div class="chat"><small style="color:#999">[DEBUG] move failed because it did nothing.</small></div></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history"><small>The opposing Kingdra restored a little HP using its Leftovers!</small><br></div><div class="battle-history"><small>Laundry Machine restored a little HP using its Leftovers!</small><br></div><div class="battle-history"><small>Laundry Machine was hurt by poison!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 22</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Kingdra used <strong>Draco Meteor</strong>!<br></div><div class="battle-history"><small>(Laundry Machine lost <abbr title="−174/304">57.2%</abbr> of its health!)</small><br></div><div class="battle-history"><small>The opposing Kingdra's Sp. Atk fell harshly!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Laundry Machine used <strong>Thunder Wave</strong>!<br></div><div class="battle-history"><small>The opposing Kingdra avoided the attack!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history"><small>The opposing Kingdra restored a little HP using its Leftovers!</small><br></div><div class="battle-history"><small>Laundry Machine restored a little HP using its Leftovers!</small><br></div><div class="battle-history"><small>Laundry Machine was hurt by poison!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Laundry Machine fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Go! Lowkey Covid (<strong>Roselia</strong>)!<br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 23</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Kingdra used <strong>Ice Beam</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(Lowkey Covid lost <abbr title="−52/304">17.1%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Lowkey Covid used <strong>Leaf Storm</strong>!<br></div><div class="battle-history"><small>The opposing Kingdra avoided the attack!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history"><small>The opposing Kingdra restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 24</h2><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 withdrew Kingdra!<br></div><div class="battle-history">mike30452 sent out Tornadus (<strong>Tornadus-Therian</strong>)!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Lowkey Covid used <strong>Spikes</strong>!<br></div><div class="battle-history"><small>Spikes were scattered on the ground all around the opposing team!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 25</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Tornadus used <strong>Hurricane</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(Lowkey Covid lost <abbr title="−156/304">51.3%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Lowkey Covid fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>The rain stopped.</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Go! F-22 (<strong>Latios</strong>)!<br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 26</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Tornadus used <strong>Hurricane</strong>!<br></div><div class="battle-history"><small>F-22 avoided the attack!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">F-22 used <strong>Draco Meteor</strong>!<br></div><div class="battle-history"><small>(The opposing Tornadus lost <abbr title="−160/362">44.2%</abbr> of its health!)</small><br></div><div class="battle-history"><small>F-22's Sp. Atk fell harshly!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Tornadus fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 sent out <strong>Politoed</strong>!<br></div><div class="battle-history"><small>The opposing Politoed was hurt by the spikes!</small><br></div><div class="battle-history">[The opposing Politoed's Drizzle]<br><small>It started to rain!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 27</h2><div class="spacer battle-history"><br></div><div class="battle-history">F-22 used <strong>Thunderbolt</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Politoed lost <abbr title="−112/384">29.2%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Politoed used <strong>Toxic</strong>!<br></div><div class="battle-history"><small>F-22 was badly poisoned!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history"><small>F-22 was hurt by poison!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 28</h2><div class="chat"><small> SquirtleSquadu joined</small></div><div class="spacer battle-history"><br></div><div class="battle-history">F-22 used <strong>Thunderbolt</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Politoed lost <abbr title="−42/384">10.9%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Politoed fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history"><small>F-22 was hurt by poison!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">mike30452 sent out <strong>Kingdra</strong>!<br></div><div class="battle-history"><small>The opposing Kingdra was hurt by the spikes!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 29</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Kingdra used <strong>Ice Beam</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(F-22 lost <abbr title="−79/301">26.2%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">F-22 fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history"><small>The opposing Kingdra restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Go! Benedict (<strong>Togekiss</strong>)!<br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 30</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Kingdra used <strong>Ice Beam</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(Benedict lost <abbr title="−119/311">38.3%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Benedict fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(Rain continues to fall.)</small><br></div><div class="battle-history"><small>The opposing Kingdra restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Go! Loan Shark (<strong>Garchomp</strong>)!<br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 31</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Kingdra used <strong>Ice Beam</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(Loan Shark lost <abbr title="−357/357">100%</abbr> of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Loan Shark fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><strong>mike30452</strong> won the battle!<br></div></div><div class="inner-preempt message-log"></div></div></div>
+</div>
+<script>
+let daily = Math.floor(Date.now()/1000/60/60/24);document.write('<script src="https://play.pokemonshowdown.com/js/replay-embed.js?version'+daily+'"></'+'script>');
+</script>
