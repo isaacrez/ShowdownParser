@@ -24,13 +24,13 @@ class StatsWriter:
 
         DEFAULT_EXTENSION = [0, 0, 0]
         for entry in self.writeable_data:
+
             species = entry[1]
 
-            name = self.data.species_to_nickname[species]
-
-            if name in self.data.pokemon.keys():
+            try:
+                name = self.data.species_to_nickname[species]
                 extension = self.data.pokemon[name][2:5]
-            else:
+            except KeyError:
                 extension = DEFAULT_EXTENSION
 
             for value in extension:
