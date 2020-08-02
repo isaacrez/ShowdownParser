@@ -39,7 +39,7 @@ class Parser:
     current_line = ""
     previous_line = ""
     last_move_by = ""
-    info = ParserStorage()
+    info: ParserStorage = ParserStorage()
 
     def parse_loop(self, current_line):
         POTENTIAL_EVENTS = {
