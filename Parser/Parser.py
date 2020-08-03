@@ -47,7 +47,7 @@ class Parser:
             "|move": self.process_move,
             "|-status": self.process_status,
             "|switch": self.process_switch,
-            "|drag": self.process_switch,
+            "|drag": self.process_drag,
             "|faint": self.process_faint
         }
 
