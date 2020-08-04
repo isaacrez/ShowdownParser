@@ -34,6 +34,7 @@ class Parser:
     MAJOR_STATUS_KOs = ["psn"]
     MINOR_STATUS_KOs = []
     HAZARDS_KOs = ["Stealth Rock",
+                   "Toxic Spikes",
                    "Spikes"]
 
     current_line = ""
@@ -76,6 +77,7 @@ class Parser:
         for hazard in self.HAZARDS_KOs:
             if self.current_line.find(hazard, 6) != FAILED:
                 self.info.hazards[team] = {hazard: name}
+                break
 
     def process_status(self):
         EVENT = "|-status"
