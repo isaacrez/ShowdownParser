@@ -34,9 +34,6 @@ class Parser:
     def _parse_loop(self):
         for event in self.POTENTIAL_EVENTS:
             if self.is_event(event):
-                print("Identified event:", event)
-                print(self.curr_line)
-
                 self.use_processor(event)
 
     def is_event(self, event):
@@ -57,8 +54,8 @@ class Parser:
             self.prev_line = self.curr_line
             self.curr_line = self.f.readline()
         except Exception as e:
-            print("File reading error!")
-            print(e)
+            print("File reading error - this should be harmless.")
+            print(e, "\n")
 
     def get_data(self) -> ParserStorage:
         return self.info
