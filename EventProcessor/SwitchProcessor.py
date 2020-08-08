@@ -18,7 +18,7 @@ class SwitchProcessor(EventProcessor):
             self.info.pokemon[name] = [team, species, 0, 0, 0, "", {}]
 
         # Reset information
-        self.last_move_by = ""
+        self.info.last_move_by = ""
         self.info.pokemon[name][6] = {}
         self.info.current_pokes[team] = name
 
