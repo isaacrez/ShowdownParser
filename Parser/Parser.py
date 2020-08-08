@@ -33,10 +33,10 @@ class Parser:
     
     def _parse_loop(self):
         for event in self.POTENTIAL_EVENTS:
-            if self.is_event(event):
-                self.use_processor(event)
+            if self._is_event(event):
+                self._use_processor(event)
 
-    def is_event(self, event):
+    def _is_event(self, event):
         end_index = len(event)
         possible_event = self.curr_line[:end_index]
         if event == possible_event:
@@ -44,7 +44,7 @@ class Parser:
         else:
             return False
 
-    def use_processor(self, event):
+    def _use_processor(self, event):
         generator = self.POTENTIAL_EVENTS[event]
         processor = generator(self.prev_line, self.curr_line, self.info, event)
         processor.process()
