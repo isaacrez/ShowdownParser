@@ -3,6 +3,7 @@ class ParserStorage:
 
     party_lineup = {"p1": [], "p2": []}
     species_to_nickname = {}
+    last_move_by = ""
 
     # Stores detailed information on pokemon used
     # "nickname":
