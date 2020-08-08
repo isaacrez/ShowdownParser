@@ -2,6 +2,7 @@
 from EventProcessor.PartyProcessor import *
 from EventProcessor.MoveProcessor import *
 from EventProcessor.StatusProcessor import *
+from EventProcessor.StartProcessor import *
 from EventProcessor.SwitchProcessor import *
 from EventProcessor.FaintProcessor import *
 from Parser.ParserStorage import *
@@ -16,6 +17,7 @@ class Parser:
         "|poke": PartyProcessor,
         "|move": MoveProcessor,
         "|-status": StatusProcessor,
+        "|-start": StartProcessor,
         "|switch": SwitchProcessor,
         "|drag": SwitchProcessor,
         "|faint": FaintProcessor

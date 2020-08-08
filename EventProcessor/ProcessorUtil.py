@@ -10,6 +10,7 @@ class ProcessorUtil:
             "|poke": 6,
             "|move": 6,
             "|-status": 9,
+            "|-start": 8,
             "|switch": 8,
             "|drag": 6,
             "|faint": 7
@@ -24,6 +25,7 @@ class ProcessorUtil:
             "|poke": 9,
             "|move": 11,
             "|-status": 14,
+            "|-start": 13,
             "|switch": 13,
             "|drag": 11,
             "|faint": 12

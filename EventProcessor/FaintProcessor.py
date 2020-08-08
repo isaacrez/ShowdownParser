@@ -6,8 +6,16 @@ class FaintProcessor(EventProcessor):
     DIRECT_KO = 2
     PASSIVE_KO = 3
     DEATH = 4
+    MAJOR_STATUS = 5
+    MINOR_STATUS = 6
 
-    MAJOR_STATUS_KOs = ["psn"]
+    MAJOR_STATUS_KOs = [
+        "psn"
+    ]
+
+    MINOR_STATUS_KOs = [
+        "confusion"
+    ]
 
     HAZARDS_KOs = [
         "Stealth Rock",
@@ -20,11 +28,8 @@ class FaintProcessor(EventProcessor):
         self.name = self.util.get_pokemon_name(EVENT)
         self.team = self.util.get_pokemon_team(EVENT)
 
-        if self.is_self_KO():
-            self.process_self_KO()
-        else:
-            self.update_killer_stats()
-            self.update_killed_stats()
+        self.update_killer_stats()
+        self.update_killed_stats()
 
     def is_self_KO(self):
         if self.info.last_move_by == self.name:
@@ -42,13 +47,24 @@ class FaintProcessor(EventProcessor):
     def update_killer_stats(self):
         is_passive = True
 
-        if self.is_death_from(self.HAZARDS_KOs):
-            killer = self.find_hazard_setter(self.team)
+        print("Death occurred:", self.curr_line[:-1])
+
+        if self.is_accounted_for():
+            return
+
+        elif self.is_death_from(self.HAZARDS_KOs):
+            killer = self.find_hazard_setter()
+
         elif self.is_death_from(self.MAJOR_STATUS_KOs):
-            killer = self.find_status_setter(self.name)
-        elif self.is_death_from(["recoil"]):
-            other_team = self.util.invert_team(self.team)
-            killer = self.info.current_pokes[other_team]
+            killer = self.find_major_status_setter()
+
+        elif self.is_death_from(self.MINOR_STATUS_KOs):
+            killer = self.find_minor_status_setter()
+
+        elif self.is_self_KO():
+            self.process_self_KO()
+            return
+
         else:
             killer = self.info.last_move_by
             is_passive = False
@@ -61,15 +77,22 @@ class FaintProcessor(EventProcessor):
     def update_killed_stats(self):
         self.info.pokemon[self.name][self.DEATH] = 1
 
+    def is_accounted_for(self):
+        if self.util.prev_end_is("|upkeep"):
+            print("Death accounted for outside of FaintProcessor")
+            return True
+        else:
+            return False
+
     def is_death_from(self, causes):
         for cause in causes:
             if self.util.prev_end_is(cause):
                 return True
         return False
     
-    def find_hazard_setter(self, team):
+    def find_hazard_setter(self):
         cause = self.get_death_cause(self.HAZARDS_KOs)
-        return self.info.hazards[team][cause]
+        return self.info.hazards[self.team][cause]
 
     def get_death_cause(self, causes):
         for cause in causes:
@@ -77,5 +100,9 @@ class FaintProcessor(EventProcessor):
                 return cause
         raise ValueError("Cause not found from list:", causes)
 
-    def find_status_setter(self, name):
-        return self.info.pokemon[name][5]
+    def find_major_status_setter(self):
+        return self.info.pokemon[self.name][self.MAJOR_STATUS]
+
+    def find_minor_status_setter(self):
+        status = self.get_death_cause(self.MINOR_STATUS_KOs)
+        return self.info.pokemon[self.name][self.MINOR_STATUS][status]
