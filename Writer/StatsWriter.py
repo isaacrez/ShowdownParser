@@ -37,17 +37,11 @@ class StatsWriter:
                 entry.append(value)
 
     def write_header(self):
-        self.write_to_file("Team,\tSpecies,\tDirect KOs,\tPassive KOs,\tDeaths\n")
+        self.write_to_file("Team,Species,Direct KOs,Passive KOs,Deaths\n")
 
     def populate_data(self):
-        line_length = len(self.writeable_data[0])
-
         for entry in self.writeable_data:
-            new_line = ""
-            for i in range(0, line_length):
-                stat = entry[i]
-                new_line = new_line + str(stat) + ",\t"
-            new_line = new_line[:-2] + "\n"
+            new_line = ",".join(map(str, entry)) + "\n"
             self.write_to_file(new_line)
 
     def write_to_file(self, text: str):
