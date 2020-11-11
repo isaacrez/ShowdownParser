@@ -64,13 +64,13 @@ class ProcessorUtil:
         return end_index
 
     def current_start_is(self, text):
-        return check_start_for(text, self.curr_line)
+        return self.curr_line.startswith(text)
 
     def current_end_is(self, text):
-        return check_line_end_for(text, self.curr_line)
+        return self.curr_line.endswith(text)
 
     def prev_end_is(self, text):
-        return check_line_end_for(text, self.prev_line)
+        return self.prev_line.endswith(text)
 
     @staticmethod
     def invert_team(team):
@@ -78,22 +78,3 @@ class ProcessorUtil:
             return "p2"
         else:
             return "p1"
-
-def check_start_for(text, full_line):
-    i = 0
-    j = i + len(text)
-
-    if full_line[i:j] == text:
-        return True
-    else:
-        return False
-
-def check_line_end_for(text, full_line):
-    line_end_symbol_offset = -1
-    j = line_end_symbol_offset
-    i = j - len(text)
-
-    if full_line[i:j] == text:
-        return True
-    else:
-        return False
