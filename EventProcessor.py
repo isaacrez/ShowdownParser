@@ -21,25 +21,26 @@ class EventProcessor:
         self.util: ProcessorUtil = ProcessorUtil(prev_line, curr_line)
 
         self.event = event
-        self.name = self.util.get_pokemon_name(event)
-        self.team = self.util.get_pokemon_team(event)
+        self.name = self.util.get_pokemon_name()
+        self.team = self.util.get_pokemon_team()
 
     def check_if_event(self, event):
-        input_len = len(event)
-        potential_event = self.curr_line[:input_len]
-
-        if potential_event == event:
-            return True
-        else:
-            return False
+        return self.curr_line.startswith(event)
 
     def process(self):
         pass
 
 
 class PartyProcessor(EventProcessor):
+    def __init__(self, prev_line, curr_line, info: ParserStorage, event):
+        self.info = info
+        util = ProcessorUtil(prev_line, curr_line)
+
+        self.species = util.get_species_name()
+        self.team = util.get_pokemon_team()
+
     def process(self):
-        self.info.add_pokemon(self.name, self.team)
+        self.info.add_pokemon(self.species, self.team)
 
 
 class StartProcessor(EventProcessor):
@@ -91,7 +92,8 @@ class SwitchProcessor(EventProcessor):
         team = self.team
 
         if self.is_first_time_in(name):
-            species = self.util.get_species_name(self.event, name)
+            species = self.curr_line.split('|')[3].rstrip(", MF")
+            species = self.util.get_species_name()
             self.info.species_to_nickname[species] = name
             self.info.pokemon[name] = [team, species, 0, 0, 0, "", {}]
 
@@ -116,15 +118,7 @@ class MoveProcessor(EventProcessor):
                 break
 
     def is_move(self, move):
-        base_index = 12
-        start_index = base_index + len(self.name)
-        end_index = start_index + len(move)
-
-        potential_move = self.curr_line[start_index:end_index]
-        if potential_move == move:
-            return True
-        else:
-            return False
+        return move == self.curr_line.split('|')[3]
 
     def process_hazard_move(self, hazard):
         other_team = self.util.invert_team(self.team)
@@ -163,8 +157,6 @@ class FaintProcessor(EventProcessor):
 
     def process(self):
         EVENT = "|faint"
-        self.name = self.util.get_pokemon_name(EVENT)
-        self.team = self.util.get_pokemon_team(EVENT)
 
         self.update_killer_stats()
         self.update_killed_stats()

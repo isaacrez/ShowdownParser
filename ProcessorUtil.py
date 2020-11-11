@@ -3,65 +3,17 @@ class ProcessorUtil:
     def __init__(self, prev_line, curr_line):
         self.prev_line = prev_line
         self.curr_line = curr_line
+        self.curr_components = curr_line.split('|')
 
-    def get_pokemon_team(self, event_type):
-        OFFSET_LENGTH = {
-            "|poke": 6,
-            "|move": 6,
-            "|-status": 9,
-            "|-start": 8,
-            "|switch": 8,
-            "|drag": 6,
-            "|faint": 7
-        }
+    def get_pokemon_team(self):
+        return self.curr_components[2][0:2]
 
-        offset = OFFSET_LENGTH[event_type]
-        team = self.curr_line[offset:offset + 2]
-        return team
+    def get_pokemon_name(self):
+        nickname = self.curr_components[2]
+        return nickname.lstrip('p12a: ').rstrip('\n')
 
-    def get_pokemon_name(self, event_type):
-        OFFSET_LENGTH = {
-            "|poke": 9,
-            "|move": 11,
-            "|-status": 14,
-            "|-start": 13,
-            "|switch": 13,
-            "|drag": 11,
-            "|faint": 12
-        }
-
-        offset = OFFSET_LENGTH[event_type]
-        end_index = self.get_index_end_for_section(offset)
-        name = self.curr_line[offset:end_index]
-        return name
-
-    def get_species_name(self, event_type, nickname):
-        OFFSET_LENGTH = {
-            "|switch": 13,
-            "|drag": 11
-        }
-
-        offset = OFFSET_LENGTH[event_type] + len(nickname) + 1
-        end_index = self.get_index_end_for_section(offset)
-        species = self.curr_line[offset:end_index]
-        return species
-
-    def get_index_end_for_section(self, offset):
-        name_end_index = self.curr_line.find(",", offset)
-        section_end_index = self.curr_line.find("|", offset)
-        line_end_index = self.curr_line.find("\n", offset)
-
-        FAILED = -1
-        if section_end_index == FAILED:
-            end_index = line_end_index
-        elif name_end_index == FAILED:
-            end_index = section_end_index
-        elif name_end_index < section_end_index:
-            end_index = name_end_index
-        else:
-            end_index = section_end_index
-
-        return end_index
+    def get_species_name(self):
+        return self.curr_components[3].rstrip(", MF")
 
     def current_start_is(self, text):
         return self.curr_line.startswith(text)
