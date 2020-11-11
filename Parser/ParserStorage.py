@@ -21,8 +21,8 @@ class ParserStorage:
     hazards = {"p1": {}, "p2": {}}
     current_pokes = {"p1": "", "p2": ""}
 
-    def add_pokemon(self, pokemon):
-        pass
+    def add_pokemon(self, pokemon, team):
+        self.party_lineup[team].append(pokemon)
 
     def update_field(self, pokemon):
         pass
