@@ -1,5 +1,5 @@
 
-from EventProcessor.ProcessorUtil import ProcessorUtil
+from ProcessorUtil import *
 from Parser.ParserStorage import ParserStorage
 
 class EventProcessor:
