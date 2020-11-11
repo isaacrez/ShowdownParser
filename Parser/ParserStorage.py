@@ -20,3 +20,17 @@ class ParserStorage:
     # ex: hazards[p1]["stealth rocks"] = "Empoleon's nickname"
     hazards = {"p1": {}, "p2": {}}
     current_pokes = {"p1": "", "p2": ""}
+
+    def add_pokemon(self, pokemon):
+        pass
+
+    def update_field(self, pokemon):
+        pass
+
+    def update_hazards(self, setter, hazard):
+        pass
+
+    def _team_of(self, pokemon):
+        pass
+
+
