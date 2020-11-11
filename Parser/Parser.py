@@ -39,12 +39,7 @@ class Parser:
                 self._use_processor(event)
 
     def _is_event(self, event):
-        end_index = len(event)
-        possible_event = self.curr_line[:end_index]
-        if event == possible_event:
-            return True
-        else:
-            return False
+        return self.curr_line.startswith(event)
 
     def _use_processor(self, event):
         generator = self.POTENTIAL_EVENTS[event]
