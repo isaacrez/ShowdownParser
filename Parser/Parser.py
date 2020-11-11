@@ -1,10 +1,5 @@
 
-from EventProcessor.PartyProcessor import *
-from EventProcessor.MoveProcessor import *
-from EventProcessor.StatusProcessor import *
-from EventProcessor.StartProcessor import *
-from EventProcessor.SwitchProcessor import *
-from EventProcessor.FaintProcessor import *
+from EventProcessor import *
 from Parser.ParserStorage import *
 
 class Parser:

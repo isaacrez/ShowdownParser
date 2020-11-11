@@ -1,4 +1,3 @@
-
 class ProcessorUtil:
 
     def __init__(self, prev_line, curr_line):

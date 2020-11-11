@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<!-- version 1 -->
+<title>[Gen 8] OU replay: crumeptand vs. Reesesmcpuffs</title>
+<style>
+html,body {font-family:Verdana, sans-serif;font-size:10pt;margin:0;padding:0;}body{padding:12px 0;} .battle-log {font-family:Verdana, sans-serif;font-size:10pt;} .battle-log-inline {border:1px solid #AAAAAA;background:#EEF2F5;color:black;max-width:640px;margin:0 auto 80px;padding-bottom:5px;} .battle-log .inner {padding:4px 8px 0px 8px;} .battle-log .inner-preempt {padding:0 8px 4px 8px;} .battle-log .inner-after {margin-top:0.5em;} .battle-log h2 {margin:0.5em -8px;padding:4px 8px;border:1px solid #AAAAAA;background:#E0E7EA;border-left:0;border-right:0;font-family:Verdana, sans-serif;font-size:13pt;} .battle-log .chat {vertical-align:middle;padding:3px 0 3px 0;font-size:8pt;} .battle-log .chat strong {color:#40576A;} .battle-log .chat em {padding:1px 4px 1px 3px;color:#000000;font-style:normal;} .chat.mine {background:rgba(0,0,0,0.05);margin-left:-8px;margin-right:-8px;padding-left:8px;padding-right:8px;} .spoiler {color:#BBBBBB;background:#BBBBBB;padding:0px 3px;} .spoiler:hover, .spoiler:active, .spoiler-shown {color:#000000;background:#E2E2E2;padding:0px 3px;} .spoiler a {color:#BBBBBB;} .spoiler:hover a, .spoiler:active a, .spoiler-shown a {color:#2288CC;} .chat code, .chat .spoiler:hover code, .chat .spoiler:active code, .chat .spoiler-shown code {border:1px solid #C0C0C0;background:#EEEEEE;color:black;padding:0 2px;} .chat .spoiler code {border:1px solid #CCCCCC;background:#CCCCCC;color:#CCCCCC;} .battle-log .rated {padding:3px 4px;} .battle-log .rated strong {color:white;background:#89A;padding:1px 4px;border-radius:4px;} .spacer {margin-top:0.5em;} .message-announce {background:#6688AA;color:white;padding:1px 4px 2px;} .message-announce a, .broadcast-green a, .broadcast-blue a, .broadcast-red a {color:#DDEEFF;} .broadcast-green {background-color:#559955;color:white;padding:2px 4px;} .broadcast-blue {background-color:#6688AA;color:white;padding:2px 4px;} .infobox {border:1px solid #6688AA;padding:2px 4px;} .infobox-limited {max-height:200px;overflow:auto;overflow-x:hidden;} .broadcast-red {background-color:#AA5544;color:white;padding:2px 4px;} .message-learn-canlearn {font-weight:bold;color:#228822;text-decoration:underline;} .message-learn-cannotlearn {font-weight:bold;color:#CC2222;text-decoration:underline;} .message-effect-weak {font-weight:bold;color:#CC2222;} .message-effect-resist {font-weight:bold;color:#6688AA;} .message-effect-immune {font-weight:bold;color:#666666;} .message-learn-list {margin-top:0;margin-bottom:0;} .message-throttle-notice, .message-error {color:#992222;} .message-overflow, .chat small.message-overflow {font-size:0pt;} .message-overflow::before {font-size:9pt;content:'...';} .subtle {color:#3A4A66;}
+</style>
+<div class="wrapper replay-wrapper" style="max-width:1180px;margin:0 auto">
+<input type="hidden" name="replayid" value="gen8ou-1208848900" />
+<div class="battle"></div><div class="battle-log"></div><div class="replay-controls"></div><div class="replay-controls-2"></div>
+<h1 style="font-weight:normal;text-align:center"><strong>[Gen 8] OU</strong><br /><a href="http://pokemonshowdown.com/users/crumeptand" class="subtle" target="_blank">crumeptand</a> vs. <a href="http://pokemonshowdown.com/users/reesesmcpuffs" class="subtle" target="_blank">Reesesmcpuffs</a></h1>
+<script type="text/plain" class="battle-log-data">|raw|<div class="broadcast-red"><strong>This battle is invite-only!<\/strong><br \/>Users must be invited with <code>\/invite<\/code> (or be staff) to join<\/div>
+|j|☆crumeptand
+|j|☆Reesesmcpuffs
+|t:|1603578156
+|player|p1|crumeptand|266|
+|player|p2|Reesesmcpuffs|fisherman-gen4|
+|teamsize|p1|6
+|teamsize|p2|6
+|gametype|singles
+|gen|8
+|tier|[Gen 8] OU
+|clearpoke
+|poke|p1|Torkoal, M|
+|poke|p1|Ludicolo, F|
+|poke|p1|Flygon, F|
+|poke|p1|Flapple, M|
+|poke|p1|Skuntank, M|
+|poke|p1|Golurk|
+|poke|p2|Corviknight, M|
+|poke|p2|Tauros, M|
+|poke|p2|Slowking, F|
+|poke|p2|Dugtrio-Alola, F|
+|poke|p2|Ditto|
+|poke|p2|Hippowdon, F|
+|rule|Sleep Clause Mod: Limit one foe put to sleep
+|rule|Species Clause: Limit one of each Pokémon
+|rule|OHKO Clause: OHKO moves are banned
+|rule|Evasion Moves Clause: Evasion moves are banned
+|rule|Endless Battle Clause: Forcing endless battles is banned
+|rule|HP Percentage Mod: HP is shown in percentages
+|rule|Dynamax Clause: You cannot dynamax
+|teampreview
+|
+|t:|1603578289
+|start
+|switch|p1a: Golurk|Golurk|100\/100
+|switch|p2a: Hippowdon|Hippowdon, F|100\/100
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Hippowdon
+|turn|1
+|
+|t:|1603578323
+|move|p1a: Golurk|Stealth Rock|p2a: Hippowdon
+|-sidestart|p2: Reesesmcpuffs|move: Stealth Rock
+|move|p2a: Hippowdon|Roar|p1a: Golurk
+|drag|p1a: Skuntank|Skuntank, M|100\/100
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Skuntank|94\/100|[from] Sandstorm
+|upkeep
+|turn|2
+|
+|t:|1603578358
+|switch|p1a: Golurk|Golurk|100\/100
+|move|p2a: Hippowdon|Facade|p1a: Golurk
+|-immune|p1a: Golurk
+|
+|-weather|Sandstorm|[upkeep]
+|upkeep
+|turn|3
+|
+|t:|1603578417
+|switch|p2a: Ditto|Ditto|100\/100
+|-damage|p2a: Ditto|88\/100|[from] Stealth Rock
+|-transform|p2a: Ditto|p1a: Golurk|[from] ability: Imposter
+|move|p1a: Golurk|Stealth Rock||[still]
+|-fail|p1a: Golurk
+|
+|-weather|Sandstorm|[upkeep]
+|upkeep
+|turn|4
+|
+|t:|1603578464
+|move|p1a: Golurk|Ice Punch|p2a: Ditto
+|-supereffective|p2a: Ditto
+|-damage|p2a: Ditto|0 fnt
+|faint|p2a: Ditto
+|
+|-weather|Sandstorm|[upkeep]
+|upkeep
+|
+|t:|1603578498
+|switch|p2a: Tauros|Tauros, M|100\/100
+|-damage|p2a: Tauros|88\/100|[from] Stealth Rock
+|turn|5
+|
+|t:|1603578522
+|move|p2a: Tauros|Lash Out|p1a: Golurk
+|-supereffective|p1a: Golurk
+|-enditem|p1a: Golurk|Colbur Berry|[eat]
+|-enditem|p1a: Golurk|Colbur Berry|[weaken]
+|-damage|p1a: Golurk|80\/100
+|move|p1a: Golurk|Earthquake|p2a: Tauros
+|-damage|p2a: Tauros|35\/100
+|
+|-weather|none
+|upkeep
+|turn|6
+|
+|t:|1603578538
+|move|p2a: Tauros|Blizzard|p1a: Golurk
+|-supereffective|p1a: Golurk
+|-damage|p1a: Golurk|45\/100
+|move|p1a: Golurk|Ice Punch|p2a: Tauros
+|-damage|p2a: Tauros|4\/100
+|
+|upkeep
+|turn|7
+|
+|t:|1603578560
+|move|p2a: Tauros|Blizzard|p1a: Golurk|[miss]
+|-miss|p2a: Tauros|p1a: Golurk
+|move|p1a: Golurk|Ice Punch|p2a: Tauros
+|-damage|p2a: Tauros|0 fnt
+|faint|p2a: Tauros
+|
+|upkeep
+|
+|t:|1603578622
+|switch|p2a: Corviknight|Corviknight, M|100\/100
+|-damage|p2a: Corviknight|88\/100|[from] Stealth Rock
+|-ability|p2a: Corviknight|Pressure
+|turn|8
+|
+|t:|1603578640
+|move|p1a: Golurk|Ice Punch|p2a: Corviknight
+|-damage|p2a: Corviknight|64\/100
+|move|p2a: Corviknight|Air Slash|p1a: Golurk
+|-damage|p1a: Golurk|26\/100
+|
+|upkeep
+|turn|9
+|
+|t:|1603578658
+|move|p1a: Golurk|Ice Punch|p2a: Corviknight
+|-damage|p2a: Corviknight|37\/100
+|move|p2a: Corviknight|Roost|p2a: Corviknight
+|-heal|p2a: Corviknight|87\/100
+|-singleturn|p2a: Corviknight|move: Roost
+|
+|upkeep
+|turn|10
+|
+|t:|1603578671
+|move|p1a: Golurk|Ice Punch|p2a: Corviknight
+|-damage|p2a: Corviknight|61\/100
+|move|p2a: Corviknight|Reflect|p2a: Corviknight
+|-sidestart|p2: Reesesmcpuffs|Reflect
+|
+|upkeep
+|turn|11
+|
+|t:|1603578685
+|move|p1a: Golurk|Ice Punch|p2a: Corviknight
+|-damage|p2a: Corviknight|49\/100
+|move|p2a: Corviknight|Roost|p2a: Corviknight
+|-heal|p2a: Corviknight|99\/100
+|-singleturn|p2a: Corviknight|move: Roost
+|
+|upkeep
+|turn|12
+|
+|t:|1603578693
+|move|p1a: Golurk|Ice Punch|p2a: Corviknight
+|-damage|p2a: Corviknight|85\/100
+|move|p2a: Corviknight|Hurricane|p1a: Golurk
+|-damage|p1a: Golurk|0 fnt
+|faint|p1a: Golurk
+|
+|upkeep
+|
+|t:|1603578700
+|switch|p1a: Torkoal|Torkoal, M|100\/100
+|turn|13
+|
+|t:|1603578760
+|switch|p2a: Slowking|Slowking, F|100\/100
+|-damage|p2a: Slowking|88\/100|[from] Stealth Rock
+|move|p1a: Torkoal|Lava Plume|p2a: Slowking
+|-resisted|p2a: Slowking
+|-damage|p2a: Slowking|79\/100
+|
+|upkeep
+|turn|14
+|
+|t:|1603578794
+|switch|p1a: Flapple|Flapple, M|100\/100
+|move|p2a: Slowking|Thunder Wave|p1a: Flapple
+|-status|p1a: Flapple|par
+|
+|-sideend|p2: Reesesmcpuffs|Reflect
+|upkeep
+|turn|15
+|c|☆crumeptand|\/log MyFirstMistake was invited (and promoted to Room Voice) by crumeptand.
+|j|+MyFirstMistake
+
+|
+|t:|1603578833
+|move|p1a: Flapple|Bullet Seed|p2a: Slowking
+|-supereffective|p2a: Slowking
+|-damage|p2a: Slowking|42\/100
+|-supereffective|p2a: Slowking
+|-damage|p2a: Slowking|0 fnt
+|-hitcount|p2a: Slowking|2
+|-damage|p1a: Flapple|91\/100 par|[from] item: Life Orb
+|faint|p2a: Slowking
+|
+|upkeep
+|
+|t:|1603578896
+|switch|p2a: Corviknight|Corviknight, M|85\/100
+|-damage|p2a: Corviknight|73\/100|[from] Stealth Rock
+|-ability|p2a: Corviknight|Pressure
+|turn|16
+|
+|t:|1603578913
+|move|p2a: Corviknight|Roost|p2a: Corviknight
+|-heal|p2a: Corviknight|100\/100
+|-singleturn|p2a: Corviknight|move: Roost
+|move|p1a: Flapple|Dragon Dance|p1a: Flapple
+|-boost|p1a: Flapple|atk|1
+|-boost|p1a: Flapple|spe|1
+|
+|upkeep
+|turn|17
+|
+|t:|1603578953
+|cant|p1a: Flapple|par
+|move|p2a: Corviknight|Air Slash|p1a: Flapple
+|-supereffective|p1a: Flapple
+|-damage|p1a: Flapple|28\/100 par
+|
+|upkeep
+|turn|18
+|
+|t:|1603578966
+|move|p1a: Flapple|Outrage|p2a: Corviknight
+|-resisted|p2a: Corviknight
+|-damage|p2a: Corviknight|44\/100
+|-damage|p1a: Flapple|18\/100 par|[from] item: Life Orb
+|move|p2a: Corviknight|Air Slash|p1a: Flapple
+|-supereffective|p1a: Flapple
+|-damage|p1a: Flapple|0 fnt
+|faint|p1a: Flapple
+|
+|upkeep
+|
+|t:|1603578976
+|switch|p1a: Torkoal|Torkoal, M|100\/100
+|turn|19
+|
+|t:|1603579029
+|switch|p2a: Hippowdon|Hippowdon, F|100\/100
+|-damage|p2a: Hippowdon|94\/100|[from] Stealth Rock
+|-weather|Sandstorm|[from] ability: Sand Stream|[of] p2a: Hippowdon
+|move|p1a: Torkoal|Lava Plume|p2a: Hippowdon
+|-damage|p2a: Hippowdon|66\/100
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Torkoal|94\/100|[from] Sandstorm
+|-heal|p1a: Torkoal|100\/100|[from] item: Leftovers
+|upkeep
+|turn|20
+|
+|t:|1603579078
+|move|p2a: Hippowdon|Yawn|p1a: Torkoal
+|-start|p1a: Torkoal|move: Yawn|[of] p2a: Hippowdon
+|move|p1a: Torkoal|Earthquake|p2a: Hippowdon
+|-damage|p2a: Hippowdon|53\/100
+|
+|-weather|Sandstorm|[upkeep]
+|-damage|p1a: Torkoal|94\/100|[from] Sandstorm
+|-heal|p1a: Torkoal|100\/100|[from] item: Leftovers
+|upkeep
+|turn|21
+|
+|t:|1603579113
+|move|p1a: Torkoal|Lava Plume|p2a: Hippowdon
+|-damage|p2a: Hippowdon|21\/100
+|move|p2a: Hippowdon|Roar|p1a: Torkoal
+|drag|p1a: Flygon|Flygon, F|100\/100
+|
+|-weather|Sandstorm|[upkeep]
+|upkeep
+|turn|22
+|
+|t:|1603579171
+|move|p1a: Flygon|Outrage|p2a: Hippowdon
+|-damage|p2a: Hippowdon|0 fnt
+|faint|p2a: Hippowdon
+|
+|-weather|Sandstorm|[upkeep]
+|upkeep
+|
+|t:|1603579212
+|switch|p2a: Corviknight|Corviknight, M|44\/100
+|-damage|p2a: Corviknight|31\/100|[from] Stealth Rock
+|-ability|p2a: Corviknight|Pressure
+|turn|23
+|
+|t:|1603579217
+|move|p1a: Flygon|Outrage|p2a: Corviknight|[from]lockedmove
+|-resisted|p2a: Corviknight
+|-damage|p2a: Corviknight|13\/100
+|move|p2a: Corviknight|Roost|p2a: Corviknight
+|-heal|p2a: Corviknight|63\/100
+|-singleturn|p2a: Corviknight|move: Roost
+|
+|-weather|none
+|upkeep
+|turn|24
+|
+|t:|1603579227
+|move|p1a: Flygon|Outrage|p2a: Corviknight|[from]lockedmove
+|-resisted|p2a: Corviknight
+|-damage|p2a: Corviknight|43\/100
+|-start|p1a: Flygon|confusion|[fatigue]
+|move|p2a: Corviknight|Roost|p2a: Corviknight
+|-heal|p2a: Corviknight|93\/100
+|-singleturn|p2a: Corviknight|move: Roost
+|
+|upkeep
+|turn|25
+|
+|t:|1603579243
+|switch|p1a: Torkoal|Torkoal, M|100\/100
+|move|p2a: Corviknight|Reflect|p2a: Corviknight
+|-sidestart|p2: Reesesmcpuffs|Reflect
+|
+|upkeep
+|turn|26
+|
+|t:|1603579323
+|move|p2a: Corviknight|Air Slash|p1a: Torkoal
+|-damage|p1a: Torkoal|80\/100
+|cant|p1a: Torkoal|flinch
+|
+|-heal|p1a: Torkoal|86\/100|[from] item: Leftovers
+|upkeep
+|turn|27
+|
+|t:|1603579343
+|move|p2a: Corviknight|Hurricane|p1a: Torkoal
+|-damage|p1a: Torkoal|57\/100
+|move|p1a: Torkoal|Lava Plume|p2a: Corviknight
+|-supereffective|p2a: Corviknight
+|-damage|p2a: Corviknight|40\/100
+|
+|-heal|p1a: Torkoal|63\/100|[from] item: Leftovers
+|upkeep
+|turn|28
+|
+|t:|1603579359
+|move|p2a: Corviknight|Roost|p2a: Corviknight
+|-heal|p2a: Corviknight|90\/100
+|-singleturn|p2a: Corviknight|move: Roost
+|move|p1a: Torkoal|Lava Plume|p2a: Corviknight
+|-supereffective|p2a: Corviknight
+|-damage|p2a: Corviknight|43\/100
+|
+|-heal|p1a: Torkoal|69\/100|[from] item: Leftovers
+|upkeep
+|turn|29
+|
+|t:|1603579437
+|move|p2a: Corviknight|Roost|p2a: Corviknight
+|-heal|p2a: Corviknight|93\/100
+|-singleturn|p2a: Corviknight|move: Roost
+|move|p1a: Torkoal|Lava Plume|p2a: Corviknight
+|-supereffective|p2a: Corviknight
+|-damage|p2a: Corviknight|44\/100
+|
+|-heal|p1a: Torkoal|75\/100|[from] item: Leftovers
+|-sideend|p2: Reesesmcpuffs|Reflect
+|upkeep
+|turn|30
+|
+|t:|1603579472
+|move|p2a: Corviknight|Roost|p2a: Corviknight
+|-heal|p2a: Corviknight|94\/100
+|-singleturn|p2a: Corviknight|move: Roost
+|move|p1a: Torkoal|Lava Plume|p2a: Corviknight
+|-supereffective|p2a: Corviknight
+|-crit|p2a: Corviknight
+|-damage|p2a: Corviknight|17\/100
+|
+|-heal|p1a: Torkoal|81\/100|[from] item: Leftovers
+|upkeep
+|turn|31
+|
+|t:|1603579534
+|move|p2a: Corviknight|Air Slash|p1a: Torkoal
+|-damage|p1a: Torkoal|60\/100
+|move|p1a: Torkoal|Lava Plume|p2a: Corviknight
+|-supereffective|p2a: Corviknight
+|-damage|p2a: Corviknight|0 fnt
+|faint|p2a: Corviknight
+|
+|-heal|p1a: Torkoal|66\/100|[from] item: Leftovers
+|upkeep
+|
+|t:|1603579563
+|switch|p2a: Dugtrio|Dugtrio-Alola, F|100\/100
+|-damage|p2a: Dugtrio|98\/100|[from] Stealth Rock
+|turn|32
+|
+|t:|1603579584
+|move|p2a: Dugtrio|Stealth Rock|p1a: Torkoal
+|-sidestart|p1: crumeptand|move: Stealth Rock
+|move|p1a: Torkoal|Earthquake|p2a: Dugtrio
+|-supereffective|p2a: Dugtrio
+|-damage|p2a: Dugtrio|40\/100
+|
+|-heal|p1a: Torkoal|72\/100|[from] item: Leftovers
+|upkeep
+|turn|33
+|
+|t:|1603579643
+|move|p2a: Dugtrio|Stealth Rock||[still]
+|-fail|p2a: Dugtrio
+|move|p1a: Torkoal|Earthquake|p2a: Dugtrio
+|-supereffective|p2a: Dugtrio
+|-damage|p2a: Dugtrio|0 fnt
+|faint|p2a: Dugtrio
+|
+|win|crumeptand</script>
+</div>
+<div class="battle-log battle-log-inline"><div class="inner"><div class="battle-options"><div style="padding-top: 3px; padding-right: 3px; text-align: right"><button class="icon button" name="openBattleOptions" title="Options">Battle Options</button></div></div><div class="inner message-log"><div class="chat"><div class="broadcast-red"><strong>This battle is invite-only!</strong><br>Users must be invited with <code>/invite</code> (or be staff) to join</div></div><div class="chat"><small>☆crumeptand and ☆Reesesmcpuffs joined</small></div><div class=""><small>Format:</small> <br><strong>[Gen 8] OU</strong></div><div class=""><small><em>Sleep Clause Mod:</em> Limit one foe put to sleep</small></div><div class=""><small><em>Species Clause:</em> Limit one of each Pokémon</small></div><div class=""><small><em>OHKO Clause:</em> OHKO moves are banned</small></div><div class=""><small><em>Evasion Moves Clause:</em> Evasion moves are banned</small></div><div class=""><small><em>Endless Battle Clause:</em> Forcing endless battles is banned</small></div><div class=""><small><em>HP Percentage Mod:</em> HP is shown in percentages</small></div><div class=""><small><em>Dynamax Clause:</em> You cannot dynamax</small></div><div class="chat battle-history"><strong>crumeptand's team:</strong> <em style="color:#445566;display:block;">Torkoal / Ludicolo / Flygon / Flapple / Skuntank / Golurk</em></div><div class="chat battle-history"><strong>Reesesmcpuffs's team:</strong> <em style="color:#445566;display:block;">Corviknight / Tauros / Slowking / Dugtrio-Alola / Ditto / Hippowdon</em></div><div class="spacer battle-history"><br></div><div class="battle-history">Battle started between crumeptand and Reesesmcpuffs!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Go! <strong>Golurk</strong>!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Reesesmcpuffs sent out <strong>Hippowdon</strong>!<br></div><div class="battle-history">[The opposing Hippowdon's Sand Stream]<br><small>A sandstorm kicked up!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 1</h2><div class="spacer battle-history"><br></div><div class="battle-history">Golurk used <strong>Stealth Rock</strong>!<br></div><div class="battle-history"><small>Pointed stones float in the air around the opposing team!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Hippowdon used <strong>Roar</strong>!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><strong>Skuntank</strong> was dragged out!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(The sandstorm is raging.)</small><br></div><div class="battle-history"><small>Skuntank is buffeted by the sandstorm!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 2</h2><div class="spacer battle-history"><br></div><div class="battle-history">Skuntank, come back!<br></div><div class="battle-history">Go! <strong>Golurk</strong>!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Hippowdon used <strong>Facade</strong>!<br></div><div class="battle-history"><small>It doesn't affect Golurk...</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(The sandstorm is raging.)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 3</h2><div class="spacer battle-history"><br></div><div class="battle-history">Reesesmcpuffs withdrew Hippowdon!<br></div><div class="battle-history">Reesesmcpuffs sent out <strong>Ditto</strong>!<br></div><div class="battle-history"><small>Pointed stones dug into the opposing Ditto!</small><br></div><div class="battle-history">[The opposing Ditto's Imposter]<br>The opposing Ditto transformed into Golurk!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Golurk used <strong>Stealth Rock</strong>!<br></div><div class="battle-history"><small>But it failed!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(The sandstorm is raging.)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 4</h2><div class="spacer battle-history"><br></div><div class="battle-history">Golurk used <strong>Ice Punch</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Ditto lost 88% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Ditto fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(The sandstorm is raging.)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Reesesmcpuffs sent out <strong>Tauros</strong>!<br></div><div class="battle-history"><small>Pointed stones dug into the opposing Tauros!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 5</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Tauros used <strong>Lash Out</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(Golurk ate its Colbur Berry!)</small><br></div><div class="battle-history"><small>The Colbur Berry weakened the damage to Golurk!</small><br></div><div class="battle-history"><small>(Golurk lost 20% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Golurk used <strong>Earthquake</strong>!<br></div><div class="battle-history"><small>(The opposing Tauros lost 53% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>The sandstorm subsided.</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 6</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Tauros used <strong>Blizzard</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(Golurk lost 35% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Golurk used <strong>Ice Punch</strong>!<br></div><div class="battle-history"><small>(The opposing Tauros lost 31% of its health!)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 7</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Tauros used <strong>Blizzard</strong>!<br></div><div class="battle-history"><small>Golurk avoided the attack!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Golurk used <strong>Ice Punch</strong>!<br></div><div class="battle-history"><small>(The opposing Tauros lost 4% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Tauros fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Reesesmcpuffs sent out <strong>Corviknight</strong>!<br></div><div class="battle-history"><small>Pointed stones dug into the opposing Corviknight!</small><br></div><div class="battle-history">[The opposing Corviknight's Pressure]<br><small>The opposing Corviknight is exerting its pressure!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 8</h2><div class="spacer battle-history"><br></div><div class="battle-history">Golurk used <strong>Ice Punch</strong>!<br></div><div class="battle-history"><small>(The opposing Corviknight lost 24% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Air Slash</strong>!<br></div><div class="battle-history"><small>(Golurk lost 19% of its health!)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 9</h2><div class="spacer battle-history"><br></div><div class="battle-history">Golurk used <strong>Ice Punch</strong>!<br></div><div class="battle-history"><small>(The opposing Corviknight lost 27% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Roost</strong>!<br></div><div class="battle-history"><small>The opposing Corviknight had its HP restored.</small><br></div><div class="battle-history"><small>(The opposing Corviknight loses Flying type this turn.)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 10</h2><div class="spacer battle-history"><br></div><div class="battle-history">Golurk used <strong>Ice Punch</strong>!<br></div><div class="battle-history"><small>(The opposing Corviknight lost 26% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Reflect</strong>!<br></div><div class="battle-history"><small>Reflect made the opposing team stronger against physical moves!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 11</h2><div class="spacer battle-history"><br></div><div class="battle-history">Golurk used <strong>Ice Punch</strong>!<br></div><div class="battle-history"><small>(The opposing Corviknight lost 12% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Roost</strong>!<br></div><div class="battle-history"><small>The opposing Corviknight had its HP restored.</small><br></div><div class="battle-history"><small>(The opposing Corviknight loses Flying type this turn.)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 12</h2><div class="spacer battle-history"><br></div><div class="battle-history">Golurk used <strong>Ice Punch</strong>!<br></div><div class="battle-history"><small>(The opposing Corviknight lost 14% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Hurricane</strong>!<br></div><div class="battle-history"><small>(Golurk lost 26% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Golurk fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Go! <strong>Torkoal</strong>!<br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 13</h2><div class="spacer battle-history"><br></div><div class="battle-history">Reesesmcpuffs withdrew Corviknight!<br></div><div class="battle-history">Reesesmcpuffs sent out <strong>Slowking</strong>!<br></div><div class="battle-history"><small>Pointed stones dug into the opposing Slowking!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Torkoal used <strong>Lava Plume</strong>!<br></div><div class="battle-history"><small>It's not very effective...</small><br></div><div class="battle-history"><small>(The opposing Slowking lost 9% of its health!)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 14</h2><div class="spacer battle-history"><br></div><div class="battle-history">Torkoal, come back!<br></div><div class="battle-history">Go! <strong>Flapple</strong>!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Slowking used <strong>Thunder Wave</strong>!<br></div><div class="battle-history"><small>Flapple is paralyzed! It may be unable to move!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>The opposing team's Reflect wore off!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 15</h2><div class="chat chatmessage-crumeptand highlighted"><span class="message-log">MyFirstMistake was invited (and promoted to Room Voice) by crumeptand.</span></div><div class="chat"><small>+MyFirstMistake joined</small></div><div class="spacer battle-history"><br></div><div class="battle-history">Flapple used <strong>Bullet Seed</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Slowking lost 37% of its health!)</small><br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Slowking lost 42% of its health!)</small><br></div><div class="battle-history"><small>The Pokémon was hit 2 times!</small><br></div><div class="battle-history"><small>Flapple lost some of its HP!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Slowking fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Reesesmcpuffs sent out <strong>Corviknight</strong>!<br></div><div class="battle-history"><small>Pointed stones dug into the opposing Corviknight!</small><br></div><div class="battle-history">[The opposing Corviknight's Pressure]<br><small>The opposing Corviknight is exerting its pressure!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 16</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Roost</strong>!<br></div><div class="battle-history"><small>The opposing Corviknight had its HP restored.</small><br></div><div class="battle-history"><small>(The opposing Corviknight loses Flying type this turn.)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Flapple used <strong>Dragon Dance</strong>!<br></div><div class="battle-history"><small>Flapple's Attack rose!</small><br></div><div class="battle-history"><small>Flapple's Speed rose!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 17</h2><div class="spacer battle-history"><br></div><div class="battle-history">Flapple is paralyzed! It can't move!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Air Slash</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(Flapple lost 63% of its health!)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 18</h2><div class="spacer battle-history"><br></div><div class="battle-history">Flapple used <strong>Outrage</strong>!<br></div><div class="battle-history"><small>It's not very effective...</small><br></div><div class="battle-history"><small>(The opposing Corviknight lost 56% of its health!)</small><br></div><div class="battle-history"><small>Flapple lost some of its HP!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Air Slash</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(Flapple lost 18% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Flapple fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">Go! <strong>Torkoal</strong>!<br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 19</h2><div class="spacer battle-history"><br></div><div class="battle-history">Reesesmcpuffs withdrew Corviknight!<br></div><div class="battle-history">Reesesmcpuffs sent out <strong>Hippowdon</strong>!<br></div><div class="battle-history"><small>Pointed stones dug into the opposing Hippowdon!</small><br></div><div class="battle-history">[The opposing Hippowdon's Sand Stream]<br><small>A sandstorm kicked up!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Torkoal used <strong>Lava Plume</strong>!<br></div><div class="battle-history"><small>(The opposing Hippowdon lost 28% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(The sandstorm is raging.)</small><br></div><div class="battle-history"><small>Torkoal is buffeted by the sandstorm!</small><br></div><div class="battle-history"><small>Torkoal restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 20</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Hippowdon used <strong>Yawn</strong>!<br></div><div class="battle-history"><small>Torkoal grew drowsy!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Torkoal used <strong>Earthquake</strong>!<br></div><div class="battle-history"><small>(The opposing Hippowdon lost 13% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(The sandstorm is raging.)</small><br></div><div class="battle-history"><small>Torkoal is buffeted by the sandstorm!</small><br></div><div class="battle-history"><small>Torkoal restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 21</h2><div class="spacer battle-history"><br></div><div class="battle-history">Torkoal used <strong>Lava Plume</strong>!<br></div><div class="battle-history"><small>(The opposing Hippowdon lost 32% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Hippowdon used <strong>Roar</strong>!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><strong>Flygon</strong> was dragged out!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(The sandstorm is raging.)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 22</h2><div class="spacer battle-history"><br></div><div class="battle-history">Flygon used <strong>Outrage</strong>!<br></div><div class="battle-history"><small>(The opposing Hippowdon lost 21% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Hippowdon fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>(The sandstorm is raging.)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Reesesmcpuffs sent out <strong>Corviknight</strong>!<br></div><div class="battle-history"><small>Pointed stones dug into the opposing Corviknight!</small><br></div><div class="battle-history">[The opposing Corviknight's Pressure]<br><small>The opposing Corviknight is exerting its pressure!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 23</h2><div class="spacer battle-history"><br></div><div class="battle-history">Flygon used <strong>Outrage</strong>!<br></div><div class="battle-history"><small>It's not very effective...</small><br></div><div class="battle-history"><small>(The opposing Corviknight lost 18% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Roost</strong>!<br></div><div class="battle-history"><small>The opposing Corviknight had its HP restored.</small><br></div><div class="battle-history"><small>(The opposing Corviknight loses Flying type this turn.)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>The sandstorm subsided.</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 24</h2><div class="spacer battle-history"><br></div><div class="battle-history">Flygon used <strong>Outrage</strong>!<br></div><div class="battle-history"><small>It's not very effective...</small><br></div><div class="battle-history"><small>(The opposing Corviknight lost 20% of its health!)</small><br></div><div class="battle-history"><small>Flygon became confused due to fatigue!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Roost</strong>!<br></div><div class="battle-history"><small>The opposing Corviknight had its HP restored.</small><br></div><div class="battle-history"><small>(The opposing Corviknight loses Flying type this turn.)</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 25</h2><div class="spacer battle-history"><br></div><div class="battle-history">Flygon, come back!<br></div><div class="battle-history">Go! <strong>Torkoal</strong>!<br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Reflect</strong>!<br></div><div class="battle-history"><small>Reflect made the opposing team stronger against physical moves!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 26</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Air Slash</strong>!<br></div><div class="battle-history"><small>(Torkoal lost 20% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Torkoal flinched and couldn't move!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>Torkoal restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 27</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Hurricane</strong>!<br></div><div class="battle-history"><small>(Torkoal lost 29% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Torkoal used <strong>Lava Plume</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Corviknight lost 53% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>Torkoal restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 28</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Roost</strong>!<br></div><div class="battle-history"><small>The opposing Corviknight had its HP restored.</small><br></div><div class="battle-history"><small>(The opposing Corviknight loses Flying type this turn.)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Torkoal used <strong>Lava Plume</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Corviknight lost 47% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>Torkoal restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 29</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Roost</strong>!<br></div><div class="battle-history"><small>The opposing Corviknight had its HP restored.</small><br></div><div class="battle-history"><small>(The opposing Corviknight loses Flying type this turn.)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Torkoal used <strong>Lava Plume</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Corviknight lost 49% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>Torkoal restored a little HP using its Leftovers!</small><br></div><div class="battle-history"><small>The opposing team's Reflect wore off!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 30</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Roost</strong>!<br></div><div class="battle-history"><small>The opposing Corviknight had its HP restored.</small><br></div><div class="battle-history"><small>(The opposing Corviknight loses Flying type this turn.)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Torkoal used <strong>Lava Plume</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>A critical hit!</small><br></div><div class="battle-history"><small>(The opposing Corviknight lost 77% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>Torkoal restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 31</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight used <strong>Air Slash</strong>!<br></div><div class="battle-history"><small>(Torkoal lost 21% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Torkoal used <strong>Lava Plume</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Corviknight lost 17% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Corviknight fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>Torkoal restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Reesesmcpuffs sent out Dugtrio (<strong>Dugtrio-Alola</strong>)!<br></div><div class="battle-history"><small>Pointed stones dug into the opposing Dugtrio!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 32</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Dugtrio used <strong>Stealth Rock</strong>!<br></div><div class="battle-history"><small>Pointed stones float in the air around your team!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Torkoal used <strong>Earthquake</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Dugtrio lost 58% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history"><small>Torkoal restored a little HP using its Leftovers!</small><br></div><div class="spacer battle-history"><br></div><h2 class="battle-history">Turn 33</h2><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Dugtrio used <strong>Stealth Rock</strong>!<br></div><div class="battle-history"><small>But it failed!</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">Torkoal used <strong>Earthquake</strong>!<br></div><div class="battle-history"><small>It's super effective!</small><br></div><div class="battle-history"><small>(The opposing Dugtrio lost 40% of its health!)</small><br></div><div class="spacer battle-history"><br></div><div class="battle-history">The opposing Dugtrio fainted!<br></div><div class="spacer battle-history"><br></div><div class="battle-history"><strong>crumeptand</strong> won the battle!<br></div></div><div class="inner-preempt message-log"></div></div></div>
+</div>
+<script>
+let daily = Math.floor(Date.now()/1000/60/60/24);document.write('<script src="https://play.pokemonshowdown.com/js/replay-embed.js?version'+daily+'"></'+'script>');
+</script>
