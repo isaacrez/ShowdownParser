@@ -1,17 +1,30 @@
 # What does it do?
-It will apply credit for KOs, based on direct damage, hazards, status, and status resulting from hazards.
-This is intended primarily as a tool to facilitate Draft League management.
+The Showdown Parser will take a Showdown Replay, and generate a CSV of Pokemon stats.
+
+It acknowledges the following as Direct KOs:
+- Direct Damage
+- Perish Song
+
+It acknowledges the following as Indirect KOs:
+- Hazards
+- Major status conditions (i.e. Poison)
+- Minor status conditions (i.e. Confusion)
+- Self-KOs (from recoil or as a move side-effect; awards kill to other Pokemon on the field)
+
+This has been designed primarily as a tool to facilitate Draft League management.
 
 # To use...
   1. Download a replay of the match you want tabulated from Showdown
   2. Rename the replay to "matchData.txt"
-  3. Add this file to the folder containing "main.py"
-  4. Run it!
+  3. Add this file to the folder containing "Main.py"
+  4. Double click "Main.py" to run it
+  5. Open "stats.csv"
+  (Note: If stats.csv does NOT appear, please send your Replay.  The code likely encountered an error.)
 
 # Limitations
-Does not credit correctly for KOs resulting from the following...
-  - Non-major status conditions (Perish Song / Curse / Confusion)
-  - KO's not resulting from direct damage / status / hazards
+  Currently has not been tested for any "minor" status conditions besides confusion.
+  Curse and partial trapping chip are not included.
+  Deaths due to damage from trading items are not included (i.e. trading a Sticky Barb / Toxic Orb.)
   
 # Suggestions?
-This was designed as a one-night project to help automate some of the Draft League process; as a result, I don't expect this to be perfect.  If there are significant flaws / annoyances, feel free to make corrections or post an issue.  However, it may take me a while to address issues if they are posted.
+This was intended as a one-night project; it quickly became significantly more than that.  I plan to update this frequently as notice areas for improvement, but I cannot promise regular updates.
