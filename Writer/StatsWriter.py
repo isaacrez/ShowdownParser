@@ -15,26 +15,20 @@ class StatsWriter:
         self.f.close()
 
     def make_data_writable(self):
+        columns = ["team", "species", "direct KOs", "indirect KOs", "deaths"]
         self.writeable_data = []
-        party_lineup = self.data.party_lineup
 
-        for team in party_lineup:
-            for species in party_lineup[team]:
-                self.writeable_data.append([team, species])
-
-        DEFAULT_EXTENSION = [0, 0, 0]
-        for entry in self.writeable_data:
-
-            species = entry[1]
-
+        for species in self.data.pokemon_present:
+            entry = []
             try:
-                name = self.data.species_to_nickname[species]
-                extension = self.data.pokemon[name][2:5]
+                nickname = self.data.get_nickname(species)
+                for col in columns:
+                    entry.append(self.data.pokemon[nickname][col])
             except KeyError:
-                extension = DEFAULT_EXTENSION
+                team = self.data.species_to_teams[species]
+                entry = [team, species, 0, 0, 0]
 
-            for value in extension:
-                entry.append(value)
+            self.writeable_data.append(entry)
 
     def write_header(self):
         self.write_to_file("Team,Species,Direct KOs,Passive KOs,Deaths\n")

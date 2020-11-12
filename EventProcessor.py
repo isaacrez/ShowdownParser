@@ -4,12 +4,6 @@ from Parser.ParserStorage import ParserStorage
 
 class EventProcessor:
 
-    DIRECT_KO = 2
-    PASSIVE_KO = 3
-    DEATH = 4
-    MAJOR_STATUS = 5
-    MINOR_STATUS = 6
-
     HAZARDS = ["Stealth Rock",
                "Toxic Spikes",
                "Spikes"]
@@ -32,6 +26,7 @@ class EventProcessor:
 
 
 class PartyProcessor(EventProcessor):
+
     def __init__(self, prev_line, curr_line, info: ParserStorage, event):
         self.info = info
         util = ProcessorUtil(prev_line, curr_line)
@@ -40,7 +35,7 @@ class PartyProcessor(EventProcessor):
         self.team = util.get_pokemon_team()
 
     def process(self):
-        self.info.add_pokemon(self.species, self.team)
+        self.info.update_lineup(self.species, self.team)
 
 
 class StartProcessor(EventProcessor):
@@ -63,21 +58,21 @@ class StartProcessor(EventProcessor):
         name = self.name
 
         responsible_poke = self.info.last_move_by
-        self.info.pokemon[name][self.MINOR_STATUS][status] = responsible_poke
+        self.info.pokemon[name]["minor sts src"][status] = responsible_poke
 
     # This would preferably be in "FaintedProcessor", but it requires AT LEAST
     # two prior lines (likely more if two Pokemon faint at once due to Perish Song)
     def handle_perish_song(self):
         name = self.name
-        responsible_poke = self.info.pokemon[name][self.MINOR_STATUS]["perish3"]
-        self.info.pokemon[name][self.DEATH] += 1
+        responsible_poke = self.info.pokemon[name]["minor sts src"]["perish3"]
+        self.info.pokemon[name]["deaths"] = 1
 
         if responsible_poke != name:
-            self.info.pokemon[responsible_poke][self.DIRECT_KO] += 1
+            self.info.pokemon[responsible_poke]["direct KOs"] += 1
         else:
             other_team = self.util.invert_team(self.team)
             other_poke = self.info.current_pokes[other_team]
-            self.info.pokemon[other_poke][self.PASSIVE_KO] += 1
+            self.info.pokemon[other_poke]["indirect KOs"] += 1
 
 
 class SwitchProcessor(EventProcessor):
@@ -88,8 +83,8 @@ class SwitchProcessor(EventProcessor):
 
         if self.is_first_time_in(name):
             species = self.util.get_species_name()
-            self.info.species_to_nickname[species] = name
-            self.info.pokemon[name] = [team, species, 0, 0, 0, "", {}]
+            self.info.initialize_pokemon(name, team, species)
+            self.info.add_nickname(species, name)
 
         # Reset information
         self.info.last_move_by = ""
@@ -99,7 +94,9 @@ class SwitchProcessor(EventProcessor):
     def is_first_time_in(self, name):
         return name not in self.info.pokemon.keys()
 
+
 class MoveProcessor(EventProcessor):
+
     def process(self):
         self.info.last_move_by = self.name
         self.process_if_setting_hazards()
@@ -138,7 +135,7 @@ class StatusProcessor(EventProcessor):
 
     def label_responsible_pokemon(self, responsible_pokemon):
         name = self.name
-        self.info.pokemon[name][self.MAJOR_STATUS] = responsible_pokemon
+        self.info.pokemon[name]["major sts src"] = responsible_pokemon
 
 
 class FaintProcessor(EventProcessor):
@@ -154,14 +151,14 @@ class FaintProcessor(EventProcessor):
         return self.info.last_move_by == self.name
 
     def process_self_KO(self):
-        self.info.pokemon[self.name][self.DEATH] += 1
+        self.info.pokemon[self.name]["deaths"] = 1
 
         other_team = self.util.invert_team(self.team)
         present_opponent = self.info.current_pokes[other_team]
-        self.info.pokemon[present_opponent][self.PASSIVE_KO] += 1
+        self.info.pokemon[present_opponent]["indirect KOs"] += 1
 
     def update_killer_stats(self):
-        is_passive = True
+        kill_type = "indirect KOs"
 
         print("Death occurred:", self.curr_line[:-1])
 
@@ -188,15 +185,12 @@ class FaintProcessor(EventProcessor):
         else:
             print("The other fella hit 'em!")
             killer = self.info.last_move_by
-            is_passive = False
+            kill_type = "direct KOs"
 
-        if is_passive:
-            self.info.pokemon[killer][self.PASSIVE_KO] += 1
-        else:
-            self.info.pokemon[killer][self.DIRECT_KO] += 1
+        self.info.pokemon[killer][kill_type] += 1
 
     def update_killed_stats(self):
-        self.info.pokemon[self.name][self.DEATH] = 1
+        self.info.pokemon[self.name]["deaths"] = 1
 
     def is_accounted_for(self):
         return self.util.prev_end_is("|upkeep")
@@ -218,8 +212,8 @@ class FaintProcessor(EventProcessor):
         raise ValueError("Cause not found from list:", causes)
 
     def find_major_status_setter(self):
-        return self.info.pokemon[self.name][self.MAJOR_STATUS]
+        return self.info.pokemon[self.name]["major sts src"]
 
     def find_minor_status_setter(self):
         status = self.get_death_cause(self.MINOR_STATUS_KOs)
-        return self.info.pokemon[self.name][self.MINOR_STATUS][status]
+        return self.info.pokemon[self.name]["minor sts src"][status]
