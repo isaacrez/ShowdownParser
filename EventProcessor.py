@@ -82,17 +82,11 @@ class StartProcessor(EventProcessor):
 
 class SwitchProcessor(EventProcessor):
 
-    event_variants = [
-        "|switch",
-        "|drag"
-    ]
-
     def process(self):
         name = self.name
         team = self.team
 
         if self.is_first_time_in(name):
-            species = self.curr_line.split('|')[3].rstrip(", MF")
             species = self.util.get_species_name()
             self.info.species_to_nickname[species] = name
             self.info.pokemon[name] = [team, species, 0, 0, 0, "", {}]
@@ -140,10 +134,7 @@ class StatusProcessor(EventProcessor):
         self.label_responsible_pokemon(responsible_pokemon)
 
     def status_from_hazard(self):
-        if self.info.last_move_by == "":
-            return True
-        else:
-            return False
+        return self.info.last_move_by == ""
 
     def label_responsible_pokemon(self, responsible_pokemon):
         name = self.name
@@ -156,16 +147,11 @@ class FaintProcessor(EventProcessor):
     MINOR_STATUS_KOs = ["confusion"]
 
     def process(self):
-        EVENT = "|faint"
-
         self.update_killer_stats()
         self.update_killed_stats()
 
     def is_self_KO(self):
-        if self.info.last_move_by == self.name:
-            return True
-        else:
-            return False
+        return self.info.last_move_by == self.name
 
     def process_self_KO(self):
         self.info.pokemon[self.name][self.DEATH] += 1
@@ -213,11 +199,7 @@ class FaintProcessor(EventProcessor):
         self.info.pokemon[self.name][self.DEATH] = 1
 
     def is_accounted_for(self):
-        if self.util.prev_end_is("|upkeep"):
-            print("Death accounted for outside of FaintProcessor")
-            return True
-        else:
-            return False
+        return self.util.prev_end_is("|upkeep")
 
     def is_death_from(self, causes):
         for cause in causes:
@@ -226,7 +208,7 @@ class FaintProcessor(EventProcessor):
         return False
 
     def find_hazard_setter(self):
-        cause = self.get_death_cause(self.HAZARDS_KOs)
+        cause = self.get_death_cause(self.HAZARDS)
         return self.info.hazards[self.team][cause]
 
     def get_death_cause(self, causes):
