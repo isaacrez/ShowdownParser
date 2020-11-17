@@ -37,7 +37,6 @@ class Parser:
 
     def _read_loop(self):
         while self.curr_line:
-            print("Reading...")
             self._update_line()
             self._parse_loop()
     
