@@ -24,6 +24,10 @@ class Parser:
     }
 
     def start(self, filename):
+        self.info.reset()
+        self.curr_line = " "
+        self.prev_line = " "
+
         try:
             self.f = open(filename)
             self._read_loop()
@@ -33,6 +37,7 @@ class Parser:
 
     def _read_loop(self):
         while self.curr_line:
+            print("Reading...")
             self._update_line()
             self._parse_loop()
     

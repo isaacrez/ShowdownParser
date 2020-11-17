@@ -1,21 +1,26 @@
 
 class ParserStorage:
-    pokemon = {}
-    pokemon_present = []
-    species_to_teams = {}
-    species_to_nickname = {}
-    weather_set_by = ""
-    last_move_by = ""
 
-    # ex: WishWashFish directly hits BoomBoomMonkey (Uses nicknames)
-    # damaged_by["BoomBoomMonkey"] = ["WishWashFish", "direct"]
-    damaged_by = {}
+    def __init__(self):
+        self.reset()
 
-    # ex: TuxBirb sets up Stealth Rocks onto p1's side (Uses nickname)
-    # ex: hazards[p1]["Stealth Rocks"] = "TuxBirb"
-    hazards = {"p1": {}, "p2": {}}
+    def reset(self):
+        self.pokemon = {}
+        self.pokemon_present = []
+        self.species_to_teams = {}
+        self.species_to_nickname = {}
+        self.weather_set_by = ""
+        self.last_move_by = ""
 
-    current_pokes = {"p1": "", "p2": ""}
+        # ex: WishWashFish directly hits BoomBoomMonkey (Uses nicknames)
+        # damaged_by["BoomBoomMonkey"] = ["WishWashFish", "direct"]
+        self.damaged_by = {}
+
+        # ex: TuxBirb sets up Stealth Rocks onto p1's side (Uses nickname)
+        # ex: hazards[p1]["Stealth Rocks"] = "TuxBirb"
+        self.hazards = {"p1": {}, "p2": {}}
+
+        self.current_pokes = {"p1": "", "p2": ""}
 
     def update_lineup(self, pokemon, team):
         self.pokemon_present.append(pokemon)
