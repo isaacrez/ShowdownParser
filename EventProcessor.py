@@ -99,26 +99,26 @@ class MoveProcessor(EventProcessor):
 
     def process(self):
         self.info.last_move_by = self.name
-        self.process_if_setting_hazards()
         self.process_if_minor_status_move()
 
-    def process_if_setting_hazards(self):
-        for hazard in self.HAZARDS:
-            if self.is_move(hazard):
-                self.process_hazard_move(hazard)
-                break
-
     def is_move(self, move):
-        return move == self.curr_line.split('|')[3]
-
-    def process_hazard_move(self, hazard):
-        other_team = self.util.invert_team(self.team)
-        self.info.hazards[other_team][hazard] = self.name
+        return move == self.util.curr_components[3]
 
     def process_if_minor_status_move(self):
         if self.is_move("Perish Song"):
             #TODO: Add handling for Perish Song
             pass
+
+
+class HazardProcessor(EventProcessor):
+
+    def process(self):
+        if self.util.curr_components[3].startswith("move: "):
+            team = self.util.curr_components[2][0:2]
+            setting_team = self.util.invert_team(team)
+            setter = self.info.current_pokes[setting_team]
+            hazard_set = self.util.curr_components[3][6:-1]
+            self.info.hazards[team][hazard_set] = setter
 
 
 class StatusProcessor(EventProcessor):
