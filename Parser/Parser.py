@@ -11,11 +11,13 @@ class Parser:
     POTENTIAL_EVENTS = {
         "|poke": PartyProcessor,
         "|move": MoveProcessor,
+        "|-damage": DamageProcessor,
         "|-sidestart": HazardProcessor,
         "|-status": StatusProcessor,
         "|-start": StartProcessor,
         "|switch": SwitchProcessor,
         "|drag": SwitchProcessor,
+        "|replace": SwitchProcessor,
         "|faint": FaintProcessor
     }
 

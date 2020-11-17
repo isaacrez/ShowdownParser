@@ -78,21 +78,15 @@ class StartProcessor(EventProcessor):
 class SwitchProcessor(EventProcessor):
 
     def process(self):
-        name = self.name
-        team = self.team
-
-        if self.is_first_time_in(name):
+        if self.is_first_time_in():
             species = self.util.get_species_name()
-            self.info.initialize_pokemon(name, team, species)
-            self.info.add_nickname(species, name)
+            self.info.initialize_pokemon(self.name, self.team, species)
+            self.info.add_nickname(species, self.name)
 
-        # Reset information
-        self.info.last_move_by = ""
-        self.info.pokemon[name][6] = {}
-        self.info.current_pokes[team] = name
+        self.info.update_field(self.name)
 
-    def is_first_time_in(self, name):
-        return name not in self.info.pokemon.keys()
+    def is_first_time_in(self):
+        return self.name not in self.info.pokemon.keys()
 
 
 class MoveProcessor(EventProcessor):
@@ -109,6 +103,16 @@ class MoveProcessor(EventProcessor):
             #TODO: Add handling for Perish Song
             pass
 
+
+class DamageProcessor(EventProcessor):
+
+    def process(self):
+        src = "direct"
+        if len(self.util.curr_components) > 4:
+            src = self.util.curr_components[4][7:]
+
+        # print(src)
+        self.info.update_damage(self.name, src)
 
 class HazardProcessor(EventProcessor):
 
@@ -140,80 +144,18 @@ class StatusProcessor(EventProcessor):
 
 class FaintProcessor(EventProcessor):
 
-    MAJOR_STATUS_KOs = ["psn"]
-    MINOR_STATUS_KOs = ["confusion"]
-
     def process(self):
-        self.update_killer_stats()
-        self.update_killed_stats()
+        if self.not_accounted_for():
+            self.update_killer_stats()
+            self.update_killed_stats()
 
-    def is_self_KO(self):
-        return self.info.last_move_by == self.name
-
-    def process_self_KO(self):
-        self.info.pokemon[self.name]["deaths"] = 1
-
-        other_team = self.util.invert_team(self.team)
-        present_opponent = self.info.current_pokes[other_team]
-        self.info.pokemon[present_opponent]["indirect KOs"] += 1
+    def not_accounted_for(self):
+        return not self.info.pokemon[self.name]["deaths"] == 1
 
     def update_killer_stats(self):
-        kill_type = "indirect KOs"
-
-        print("Death occurred:", self.curr_line[:-1])
-
-        if self.is_accounted_for():
-            return
-
-        elif self.is_death_from(self.HAZARDS):
-            print("It's due to hazards!")
-            killer = self.find_hazard_setter()
-
-        elif self.is_death_from(self.MAJOR_STATUS_KOs):
-            print("It's due a status condition!")
-            killer = self.find_major_status_setter()
-
-        elif self.is_death_from(self.MINOR_STATUS_KOs):
-            print("It's due to a volatile status!")
-            killer = self.find_minor_status_setter()
-
-        elif self.is_self_KO():
-            print("Heh, they did themselves in!")
-            self.process_self_KO()
-            return
-
-        else:
-            print("The other fella hit 'em!")
-            killer = self.info.last_move_by
-            kill_type = "direct KOs"
-
-        self.info.pokemon[killer][kill_type] += 1
+        killer = self.info.damaged_by[self.name][0]
+        kill_type = self.info.damaged_by[self.name][1]
+        self.info.pokemon[killer][kill_type + " KOs"] += 1
 
     def update_killed_stats(self):
         self.info.pokemon[self.name]["deaths"] = 1
-
-    def is_accounted_for(self):
-        return self.util.prev_end_is("|upkeep")
-
-    def is_death_from(self, causes):
-        for cause in causes:
-            if self.util.prev_end_is(cause):
-                return True
-        return False
-
-    def find_hazard_setter(self):
-        cause = self.get_death_cause(self.HAZARDS)
-        return self.info.hazards[self.team][cause]
-
-    def get_death_cause(self, causes):
-        for cause in causes:
-            if self.util.prev_end_is(cause):
-                return cause
-        raise ValueError("Cause not found from list:", causes)
-
-    def find_major_status_setter(self):
-        return self.info.pokemon[self.name]["major sts src"]
-
-    def find_minor_status_setter(self):
-        status = self.get_death_cause(self.MINOR_STATUS_KOs)
-        return self.info.pokemon[self.name]["minor sts src"][status]

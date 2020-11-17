@@ -6,9 +6,14 @@ class ParserStorage:
     species_to_nickname = {}
     last_move_by = ""
 
-    # Stores information on what Pokemon last set hazards
-    # ex: hazards[p1]["stealth rocks"] = "Empoleon's nickname"
+    # ex: WishWashFish directly hits BoomBoomMonkey (Uses nicknames)
+    # damaged_by["BoomBoomMonkey"] = ["WishWashFish", "direct"]
+    damaged_by = {}
+
+    # ex: TuxBirb sets up Stealth Rocks onto p1's side (Uses nickname)
+    # ex: hazards[p1]["Stealth Rocks"] = "TuxBirb"
     hazards = {"p1": {}, "p2": {}}
+
     current_pokes = {"p1": "", "p2": ""}
 
     def update_lineup(self, pokemon, team):
@@ -22,7 +27,7 @@ class ParserStorage:
                               "indirect KOs": 0,
                               "deaths": 0,
                               "major sts src": "",
-                              "minor sts src": ""}
+                              "minor sts src": {}}
 
     def add_nickname(self, species, nickname):
         self.species_to_nickname[species] = nickname
@@ -30,15 +35,60 @@ class ParserStorage:
     def get_nickname(self, species):
         return self.species_to_nickname[species]
 
-    def update_field(self, species):
-        team = self.species_to_teams[species]
-        nickname = self.get_nickname(species)
+    def update_field(self, nickname):
+        team = self.pokemon[nickname]["team"]
+        self.pokemon[nickname]["minor sts src"] = {}
+        self.damaged_by.pop(self.current_pokes[team], "")
+        self.last_move_by = ""
         self.current_pokes[team] = nickname
 
     def update_hazards(self, setter, hazard):
         pass
 
-    def _team_of(self, pokemon):
-        pass
+    def update_damage(self, damaged, src):
+        DAMAGE_TYPE = {
+            "direct": "other",
+            "Recoil": "other",
+            "item: Life Orb": "other",
+            "psn": "status",
+            "brn": "status",
+            "Hail": "weather",
+            "Sandstorm": "weather",
+            "confusion": "volatile status"
+        }
 
+        if DAMAGE_TYPE[src] == "other":
+            team = self._team_from_field(damaged)
+            other_team = self._other_team(team)
+            damage_src = self.current_pokes[other_team]
 
+        elif DAMAGE_TYPE[src] == "status":
+            damage_src = self.pokemon[damaged]["major sts src"][src]
+
+        elif DAMAGE_TYPE[src] == "weather":
+            return
+
+        elif DAMAGE_TYPE[src] == "volatile status":
+            damage_src = self.pokemon[damaged]["minor sts src"]["confusion"]
+
+        else:
+            print("UNKNOWN DAMAGE SOURCE:", src)
+            return
+
+        self.damaged_by[damaged] = [damage_src]
+        if src == "direct":
+            self.damaged_by[damaged].append("direct")
+        else:
+            self.damaged_by[damaged].append("indirect")
+
+    def _team_from_field(self, nickname):
+        for team in self.current_pokes:
+            if self.current_pokes[team] == nickname:
+                return team
+
+    @staticmethod
+    def _other_team(team):
+        if team == "p1":
+            return "p2"
+        else:
+            return "p1"
