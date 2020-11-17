@@ -40,10 +40,7 @@ class PartyProcessor(EventProcessor):
 
 class StartProcessor(EventProcessor):
 
-    MINOR_STATUS = [
-        "confusion",
-        "perish3"
-    ]
+    MINOR_STATUS = ["confusion"]
 
     def process(self):
         for status in self.MINOR_STATUS:
@@ -51,29 +48,18 @@ class StartProcessor(EventProcessor):
                 self.assign_responsibility(status)
                 break
 
-        if self.util.current_end_is("perish0"):
-            self.handle_perish_song()
-
     def assign_responsibility(self, status):
         name = self.name
-
         responsible_poke = self.info.last_move_by
         self.info.pokemon[name]["minor sts src"][status] = responsible_poke
 
-    # This would preferably be in "FaintedProcessor", but it requires AT LEAST
-    # two prior lines (likely more if two Pokemon faint at once due to Perish Song)
-    def handle_perish_song(self):
-        name = self.name
-        responsible_poke = self.info.pokemon[name]["minor sts src"]["perish3"]
-        self.info.pokemon[name]["deaths"] = 1
 
-        if responsible_poke != name:
-            self.info.pokemon[responsible_poke]["direct KOs"] += 1
-        else:
-            other_team = self.util.invert_team(self.team)
-            other_poke = self.info.current_pokes[other_team]
-            self.info.pokemon[other_poke]["indirect KOs"] += 1
+class PerishSongProcessor(EventProcessor):
 
+    def process(self):
+        for team in self.info.current_pokes:
+            name = self.info.current_pokes[team]
+            self.info.pokemon[name]["minor sts src"]["Perish Song"] = self.info.last_move_by
 
 class SwitchProcessor(EventProcessor):
 
@@ -93,15 +79,9 @@ class MoveProcessor(EventProcessor):
 
     def process(self):
         self.info.last_move_by = self.name
-        self.process_if_minor_status_move()
 
     def is_move(self, move):
         return move == self.util.curr_components[3]
-
-    def process_if_minor_status_move(self):
-        if self.is_move("Perish Song"):
-            #TODO: Add handling for Perish Song
-            pass
 
 
 class DamageProcessor(EventProcessor):
@@ -111,7 +91,6 @@ class DamageProcessor(EventProcessor):
         if len(self.util.curr_components) > 4:
             src = self.util.curr_components[4][7:]
 
-        # print(src)
         self.info.update_damage(self.name, src)
 
 class HazardProcessor(EventProcessor):
@@ -148,13 +127,23 @@ class FaintProcessor(EventProcessor):
         if self.not_accounted_for():
             self.update_killer_stats()
             self.update_killed_stats()
+        print(self.info.pokemon)
 
     def not_accounted_for(self):
         return not self.info.pokemon[self.name]["deaths"] == 1
 
     def update_killer_stats(self):
-        killer = self.info.damaged_by[self.name][0]
-        kill_type = self.info.damaged_by[self.name][1]
+        if self.name in self.info.damaged_by:
+            killer = self.info.damaged_by[self.name][0]
+            kill_type = self.info.damaged_by[self.name][1]
+
+        else:
+            # Perish Song kill
+            killer = self.info.pokemon[self.name]["minor sts src"]["Perish Song"]
+            if killer == self.name:
+                killer = self.info.other_field_pokemon(self.name)
+            kill_type = "indirect"
+
         self.info.pokemon[killer][kill_type + " KOs"] += 1
 
     def update_killed_stats(self):

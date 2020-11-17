@@ -10,14 +10,15 @@ class Parser:
 
     POTENTIAL_EVENTS = {
         "|poke": PartyProcessor,
+        "|-start": StartProcessor,
+        "|-fieldactivate": PerishSongProcessor,
+        "|switch": SwitchProcessor,
+        "|drag": SwitchProcessor,
+        "|replace": SwitchProcessor,
         "|move": MoveProcessor,
         "|-damage": DamageProcessor,
         "|-sidestart": HazardProcessor,
         "|-status": StatusProcessor,
-        "|-start": StartProcessor,
-        "|switch": SwitchProcessor,
-        "|drag": SwitchProcessor,
-        "|replace": SwitchProcessor,
         "|faint": FaintProcessor
     }
 

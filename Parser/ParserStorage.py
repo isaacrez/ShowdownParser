@@ -81,6 +81,12 @@ class ParserStorage:
         else:
             self.damaged_by[damaged].append("indirect")
 
+    def other_field_pokemon(self, nickname):
+        other_team = "p1"
+        if self.current_pokes[other_team] == nickname:
+            other_team = "p2"
+        return self.current_pokes[other_team]
+
     def _team_from_field(self, nickname):
         for team in self.current_pokes:
             if self.current_pokes[team] == nickname:
