@@ -4,6 +4,7 @@ class ParserStorage:
     pokemon_present = []
     species_to_teams = {}
     species_to_nickname = {}
+    weather_set_by = ""
     last_move_by = ""
 
     # ex: WishWashFish directly hits BoomBoomMonkey (Uses nicknames)
@@ -66,7 +67,7 @@ class ParserStorage:
             damage_src = self.pokemon[damaged]["major sts src"][src]
 
         elif DAMAGE_TYPE[src] == "weather":
-            return
+            damage_src = self.weather_set_by
 
         elif DAMAGE_TYPE[src] == "volatile status":
             damage_src = self.pokemon[damaged]["minor sts src"]["confusion"]

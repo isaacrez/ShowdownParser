@@ -10,6 +10,7 @@ class Parser:
 
     POTENTIAL_EVENTS = {
         "|poke": PartyProcessor,
+        "|-weather": WeatherProcessor,
         "|-start": StartProcessor,
         "|-fieldactivate": PerishSongProcessor,
         "|switch": SwitchProcessor,

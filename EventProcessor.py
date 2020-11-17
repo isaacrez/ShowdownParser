@@ -38,6 +38,15 @@ class PartyProcessor(EventProcessor):
         self.info.update_lineup(self.species, self.team)
 
 
+class WeatherProcessor(EventProcessor):
+
+    def process(self):
+        if len(self.util.curr_components) > 4:
+            self.info.weather_set_by = self.util.curr_components[4][10:]
+        elif len(self.util.curr_components) == 3:
+            self.info.weather_set_by = ""
+
+
 class StartProcessor(EventProcessor):
 
     MINOR_STATUS = ["confusion"]
@@ -127,7 +136,6 @@ class FaintProcessor(EventProcessor):
         if self.not_accounted_for():
             self.update_killer_stats()
             self.update_killed_stats()
-        print(self.info.pokemon)
 
     def not_accounted_for(self):
         return not self.info.pokemon[self.name]["deaths"] == 1
