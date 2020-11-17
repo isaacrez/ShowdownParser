@@ -3,13 +3,14 @@ from Parser.Parser import ParserStorage
 
 class StatsWriter:
 
-    FILENAME = "stats.csv"
+    def __init__(self, data: ParserStorage, filename="matchData"):
+        if not filename.endswith(".csv"):
+            filename = filename + ".csv"
 
-    def __init__(self, data: ParserStorage):
         self.data = data
         self.make_data_writable()
 
-        self.f = open(self.FILENAME, "w")
+        self.f = open(filename, "w")
         self.write_header()
         self.populate_data()
         self.f.close()
