@@ -24,9 +24,12 @@ class Parser:
     }
 
     def start(self, filename):
-        self.f = open(filename)
-        self._read_loop()
-        self.f.close()
+        try:
+            self.f = open(filename)
+            self._read_loop()
+            self.f.close()
+        except FileNotFoundError:
+            print("ERROR: The following wasn't found...", filename)
 
     def _read_loop(self):
         while self.curr_line:

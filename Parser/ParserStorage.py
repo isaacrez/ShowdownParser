@@ -50,7 +50,6 @@ class ParserStorage:
         DAMAGE_TYPE = {
             "direct": "other",
             "Recoil": "other",
-            "item: Life Orb": "other",
             "psn": "status",
             "brn": "status",
             "Hail": "weather",
@@ -58,23 +57,24 @@ class ParserStorage:
             "confusion": "volatile status"
         }
 
-        if DAMAGE_TYPE[src] == "other":
-            team = self._team_from_field(damaged)
-            other_team = self._other_team(team)
-            damage_src = self.current_pokes[other_team]
+        if src in DAMAGE_TYPE:
 
-        elif DAMAGE_TYPE[src] == "status":
-            damage_src = self.pokemon[damaged]["major sts src"][src]
+            if DAMAGE_TYPE[src] == "other":
+                damage_src = self.other_field_pokemon(damaged)
 
-        elif DAMAGE_TYPE[src] == "weather":
-            damage_src = self.weather_set_by
+            elif DAMAGE_TYPE[src] == "status":
+                damage_src = self.pokemon[damaged]["major sts src"]
 
-        elif DAMAGE_TYPE[src] == "volatile status":
-            damage_src = self.pokemon[damaged]["minor sts src"]["confusion"]
+            elif DAMAGE_TYPE[src] == "weather":
+                damage_src = self.weather_set_by
+
+            else: # Volatile Status
+                damage_src = self.pokemon[damaged]["minor sts src"]["confusion"]
 
         else:
             print("UNKNOWN DAMAGE SOURCE:", src)
-            return
+            print("Assume the other guy's responsible!")
+            damage_src = self.other_field_pokemon(damaged)
 
         self.damaged_by[damaged] = [damage_src]
         if src == "direct":
