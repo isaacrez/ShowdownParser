@@ -123,7 +123,7 @@ class StatusProcessor(EventProcessor):
         self.label_responsible_pokemon(responsible_pokemon)
 
     def status_from_hazard(self):
-        return self.info.last_move_by == ""
+        return self.info.last_move_by == "" and "[from] item:" not in self.curr_line
 
     def label_responsible_pokemon(self, responsible_pokemon):
         name = self.name
