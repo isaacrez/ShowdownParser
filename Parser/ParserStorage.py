@@ -62,6 +62,8 @@ class ParserStorage:
             "confusion": "volatile status"
         }
 
+        DMG_HAZARDS = ["Stealth Rock", "Spikes"]
+
         if src in DAMAGE_TYPE:
 
             if DAMAGE_TYPE[src] == "other":
@@ -75,6 +77,10 @@ class ParserStorage:
 
             else: # Volatile Status
                 damage_src = self.pokemon[damaged]["minor sts src"]["confusion"]
+
+        elif src in DMG_HAZARDS:
+            team = self._team_from_field(damaged)
+            damage_src = self.hazards[team][src]
 
         else:
             print("UNKNOWN DAMAGE SOURCE:", src)
