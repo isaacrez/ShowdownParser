@@ -105,13 +105,21 @@ class DamageProcessor(EventProcessor):
 class HazardProcessor(EventProcessor):
 
     def process(self):
-        if self.util.curr_components[3].startswith("move: "):
+        hazards_line = self.util.curr_components[3]
+        if hazards_line.startswith("move: "):
             team = self.util.curr_components[2][0:2]
             setting_team = self.util.invert_team(team)
             setter = self.info.current_pokes[setting_team]
-            hazard_set = self.util.curr_components[3][6:-1]
+            hazard_set = self.util.curr_components[3][6:]
             self.info.hazards[team][hazard_set] = setter
 
+        # Weird special case for Spikes
+        elif hazards_line == "Spikes":
+            team = self.util.curr_components[2][0:2]
+            setting_team = self.util.invert_team(team)
+            setter = self.info.current_pokes[setting_team]
+            hazard_set = "Spikes"
+            self.info.hazards[team][hazard_set] = setter
 
 class StatusProcessor(EventProcessor):
 
